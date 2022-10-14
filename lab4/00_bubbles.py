@@ -16,7 +16,8 @@ sd.circle(center, 40)
 # Написать функцию рисования пузырька, принммающую 3 (или более) параметра: точка рисования, шаг и цвет
 # TODO здесь ваш код
 
-def bubble_draw(point, step, color):
+def bubble_draw_draw(point, color):
+    #С ОТВЕТОВ
     sd_point = sd.Point(*point)
     sd.circle(sd_point, radius, color)
     sd.circle(sd_point, radius - step,  color)
@@ -33,7 +34,7 @@ radius = 30
 step   = 5
 for number in range(10):
     point = (first_point[0] + number*delta, first_point[1])
-    bubble(point, radius, step, color)
+    bubble_draw(point, radius, color)
 
 # Нарисовать три ряда по 10 пузырьков
 # TODO здесь ваш код
@@ -45,17 +46,18 @@ radius = 20
 step   = 5
 for number in range(10):
     point = (first_point[0] + number*delta, first_point[1])
-    bubble(point, radius, step, color)
+    bubble_draw(point, radius, color)
     point = (first_point[0] + number*delta, first_point[1]+50)
-    bubble(point, radius, step, color)
+    bubble_draw(point, radius, color)
     point = (first_point[0] + number*delta, first_point[1]+100)
-    bubble(point, radius, step, color)
+    bubble_draw(point, radius, color)
 
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
 # TODO здесь ваш код
 
+import random as rnd
+
 for i in range(100):
-    bubble((rnd.randint(10,1290), rnd.randint(10,590)), 10, 3,
-           (rnd.randint(0,255),rnd.randint(0,255),rnd.randint(0,255)))
+    bubble_draw((rnd.randint(10,1290), rnd.randint(10,590)), 10, color=(rnd.randint(0,255),rnd.randint(0,255),rnd.randint(0,255) ))
 
 sd.pause()

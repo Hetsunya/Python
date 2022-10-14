@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/00_bubbles.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/00_bubbles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/06_rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/06_rainbow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-    </list>
+    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +36,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.08_smile">
+  <component name="RunManager" selected="Python.00_bubbles">
     <configuration name="00_bubbles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.00_bubbles" />
         <item itemvalue="Python.08_smile" />
         <item itemvalue="Python.06_rainbow" />
-        <item itemvalue="Python.00_bubbles" />
         <item itemvalue="Python.01_days_in_month" />
         <item itemvalue="Python.a" />
       </list>

@@ -34,7 +34,7 @@ radius = 30
 step   = 5
 for number in range(10):
     point = (first_point[0] + number*delta, first_point[1])
-    bubble_draw(point, radius, color)
+    bubble(point, radius, color)
 
 # Нарисовать три ряда по 10 пузырьков
 # TODO здесь ваш код
@@ -46,11 +46,11 @@ radius = 20
 step   = 5
 for number in range(10):
     point = (first_point[0] + number*delta, first_point[1])
-    bubble_draw(point, radius, color)
+    bubble(point, radius, color)
     point = (first_point[0] + number*delta, first_point[1]+50)
-    bubble_draw(point, radius, color)
+    bubble(point, radius, color)
     point = (first_point[0] + number*delta, first_point[1]+100)
-    bubble_draw(point, radius, color)
+    bubble(point, radius, color)
 
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
 # TODO здесь ваш код
@@ -58,6 +58,6 @@ for number in range(10):
 import random as rnd
 
 for i in range(100):
-    bubble_draw((rnd.randint(10,1290), rnd.randint(10,590)), 10, color=(rnd.randint(0,255),rnd.randint(0,255),rnd.randint(0,255) ))
+    bubble((rnd.randint(10,1290), rnd.randint(10,590)), 10, color=(rnd.randint(0,255),rnd.randint(0,255),rnd.randint(0,255) ))
 
 sd.pause()

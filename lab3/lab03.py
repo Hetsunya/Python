@@ -11,7 +11,7 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
-    #for i in range(1, n):
+    r = 1
     while k > 0:
         r *= n
         n -= 1
@@ -39,13 +39,10 @@ def sum_digits(y):
     y = str(y)
     result = []
 
-    for i in range(0 ,len(y)):
+    for i in range(0, len(y)):
         result.append(y[i:i + 1])
 
-    #result = list(map(int, result))#ОДИН ИЗ ДВУХ ИЛИ ПРОСТО ПРИНТ
-    #result = map(int, result)#
-
-    print(sum(map(int, result)))
+    print(sum(list(map(int, result))))
 
 
 

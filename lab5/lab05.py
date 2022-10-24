@@ -1,4 +1,3 @@
-
 def lambda_curry2(func):
     """
     Возвращает каррированную версию функции двух аргументов func.
@@ -15,7 +14,8 @@ def lambda_curry2(func):
     3
     """
     "*** YOUR CODE HERE ***"
-    return ______
+
+    return lambda x: lambda y: func(x, y)
 
 
 
@@ -47,6 +47,16 @@ def count_cond(condition):
     8
     """
     "*** YOUR CODE HERE ***"
+
+    def count(n):
+        i = 1
+        sum = 0
+        while i <= n:
+            if condition(n, i):
+                sum += 1
+            i += 1
+        return sum
+    return count
 
 
 
@@ -84,9 +94,9 @@ def composite_identity(f, g):
     """
     "*** YOUR CODE HERE ***"
 
+    return lambda x: f(g(x)) - g(f(x)) == 0
 
-
-def cycle(f1, f2, f3):
+def cycle(f1, f2, f3): #cycle (I Heard You Liked Functions…). Необязательное задание
     """
     Возвращает функцию, которая сама является функцией высшего порядка.
 
@@ -114,3 +124,21 @@ def cycle(f1, f2, f3):
     19
     """
     "*** YOUR CODE HERE ***"
+
+    def fun1(n):
+        def fun2(x):
+            t = x
+            m = 1
+            while m <= n:
+                if m % 3 == 1:
+                    t = f1(t)
+                elif m % 3 == 2:
+                    t = f2(t)
+                else:
+                    t = f3(t)
+                m += 1
+            return t
+
+        return fun2
+
+    return fun1

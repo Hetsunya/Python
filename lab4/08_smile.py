@@ -12,36 +12,37 @@ import simple_draw as sd
 # TODO здесь ваш код
 import random
 
-sd.resolution = (1200, 600)
-
-def draw_smiley():
+def draw_smiley(t, m):
+    sd.resolution = (t, m)
     for _ in range(10):
-        x = random.randrange(1001)  # Рандомизируем значение х от 0 до 1000 так как  sd.resolution = (1200, 600)
-        y = random.randrange(501)  # Рандомизируем значение  от 0 до 500 так как  sd.resolution = (1200, 600)
+
+        if t < 0 or m < 0:
+            break
+
+        x = random.randrange(t - 100)
+        y = random.randrange(m - 100)
         left_bottom = sd.get_point(x, y)
         right_top = sd.get_point(x + 140, y + 90)
-        # Левый глаз
         left_eye = sd.get_point(x + 50, y + 60)
         # Правый глаз
         right_eye = sd.get_point(x + 90, y + 60)
         # Левый уголок рта
         smile_left_start = sd.get_point(x + 30, y + 30)
-        smile_left_end = sd.get_point(x + 50, y + 18)
+        smile_left_end = sd.get_point(x + 50, y + 20)
         # Середина рта
-        smile_middle_start = sd.get_point(x + 50, y + 18)
-        smile_middle_end = sd.get_point(x + 90, y + 18)
+        smile_middle_start = sd.get_point(x + 50, y + 20)
+        smile_middle_end = sd.get_point(x + 90, y + 20)
         # Правый уголок рта
-        smile_right_start = sd.get_point(x + 90, y + 18)
+        smile_right_start = sd.get_point(x + 90, y + 20)
         smile_right_end = sd.get_point(x + 110, y + 30)
         # Вывод на экран
-        sd.ellipse(left_bottom=left_bottom, right_top=right_top, color=sd.COLOR_GREEN, width=4)  # Голова
-        sd.circle(center_position=left_eye, radius=10, color=sd.COLOR_RED, width=1)  # Левый глаз
-        sd.circle(center_position=right_eye, radius=10, color=sd.COLOR_RED, width=1)  # Правый глаз
-        sd.line(start_point=smile_left_start, end_point=smile_left_end, color=sd.COLOR_RED, width=2)  # Левый уголок рта
-        sd.line(start_point=smile_middle_start, end_point=smile_middle_end, color=sd.COLOR_RED, width=2)  # Середина рта
-        sd.line(start_point=smile_right_start, end_point=smile_right_end, color=sd.COLOR_RED,
-                width=2)  # Правый уголок рта
+        sd.ellipse(left_bottom=left_bottom, right_top=right_top, color=sd.COLOR_GREEN, width=2)  # Голова
+        sd.circle(center_position=left_eye, radius=6, color=sd.COLOR_GREEN, width=1)  # Левый глаз
+        sd.circle(center_position=right_eye, radius=6, color=sd.COLOR_GREEN, width=1)  # Правый глаз
+        sd.line(start_point=smile_left_start, end_point=smile_left_end, color=sd.COLOR_GREEN, width=1)  # Левый уголок рта
+        sd.line(start_point=smile_middle_start, end_point=smile_middle_end, color=sd.COLOR_GREEN, width=1)  # Середина рта
+        sd.line(start_point=smile_right_start, end_point=smile_right_end, color=sd.COLOR_GREEN, width=1)  # Правый уголок рта
 
 
-draw_smiley()
+draw_smiley(1200, 600)
 sd.pause()

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import simple_draw as sd
-
+from lab8.practice import simple_draw as sd
 
 # На основе кода из практической части реализовать снегопад:
 # - создать списки данных для отрисовки N снежинок

@@ -138,7 +138,5 @@ def cycle(f1, f2, f3): #cycle (I Heard You Liked Functions…). Необязат
                     t = f3(t)
                 m += 1
             return t
-
         return fun2
-
     return fun1

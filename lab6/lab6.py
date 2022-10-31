@@ -77,8 +77,18 @@ def pingpong(n):
     True
     """
     "*** YOUR CODE HERE ***"
+    def ping(y):
+        if y == 1:
+            return 1
+        if num_eights(y) or y % 8 == 0:
+            return - ping(y - 1)
+        return ping(y - 1)
+    if n == 1:
+        return 1
 
+    return pingpong(n - 1) + ping(n - 1)
 
+    return pingpong(n - 1) + flag(n - 1)
 
 def missing_digits(n):
     """Функция принимает число n, цифры которого стоят в порядке возрастания
@@ -107,18 +117,12 @@ def missing_digits(n):
     True
     """
     "*** YOUR CODE HERE ***"
-    if n > 100:
-        if (n % 10 - n % 100) > 1:
-            return missing_digits(n // 10) + 1
-        else:
-            return missing_digits(n // 10)
-    elif n < 11:
+    if n < 10:
         return 0
+    elif n % 10 - n // 10 % 10 - 1 == -1:
+        return missing_digits(n // 10)
     else:
-        if n - n % 10 > 1:
-            return missing_digits(n // 10) + 1
-        else:
-            return missing_digits(n // 10)
+        return n % 10 - n // 10 % 10 - 1 + missing_digits(n//10)
 
 def next_largest_coin(coin):
     """Возвращает следующую монету.
@@ -136,6 +140,8 @@ def next_largest_coin(coin):
         return 10
     elif coin == 10:
         return 25
+    else:
+        return None
 
 
 def count_coins(total):
@@ -164,7 +170,16 @@ def count_coins(total):
     True
     """
     "*** YOUR CODE HERE ***"
-
+    def coins(n, exchange):
+        if n < 4:
+            return 1
+        elif (n < 0) or (exchange > n) or (exchange == None):
+            return 0
+        else:
+            if exchange == 25:
+                print (25)
+            return coins(n - next_largest_coin(exchange), exchange) + coins(n, next_largest_coin(exchange))
+    return coins(total, 1)
 
 from operator import sub, mul
 
@@ -178,4 +193,5 @@ def make_anonymous_factorial():
     >>> check(LAB_SOURCE_FILE, 'make_anonymous_factorial', ['Assign', 'AugAssign', 'FunctionDef', 'Recursion'])
     True
     """
-    return 'YOUR_EXPRESSION_HERE'
+    #return 'YOUR_EXPRESSION_HERE'
+    return (lambda f: lambda k: f(f, k))(lambda f, k: k if k == 1 else mul(k, f(f, sub(k, 1))))

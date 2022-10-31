@@ -82,5 +82,3 @@ def print_them_all_v4(a, b=5, *args, **kwargs):
 print_them_all_v4(5, 6, 7, 8, cat='мяу!')
 print_them_all_v4(5, b=8, cat='мяу!')
 print_them_all_v4(5, cat='мяу!', address='Moscow')
-
-

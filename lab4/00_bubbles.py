@@ -7,44 +7,39 @@ sd.resolution = (1200, 600)
 
 # Нарисовать пузырек - три вложенных окружностей с шагом 5 пикселей
 # TODO здесь ваш код
+# Нарисовать пузырек - три вложенных окружностей с шагом 5 пикселей
 for x in range(50, 65, 5):
     sd.circle(center_position=sd.get_point(600, 300), radius=x, width=2)
 
-#sd.circle(center_position=sd.get_point(600, 300), radius=40, width=2)
-#sd.circle(center_position=sd.get_point(600, 300), radius=45, width=2)
-#sd.circle(center_position=sd.get_point(600, 300), radius=50, width=2)
-
 
 # Написать функцию рисования пузырька, принммающую 3 (или более) параметра: точка рисования, шаг и цвет
-# TODO здесь ваш код
-def bubble(point, step, radius):
+def bubble(point, step, col):
+
+    all_col = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN,
+                      sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE, sd.COLOR_DARK_BLUE, sd.COLOR_DARK_PURPLE, sd.COLOR_DARK_ORANGE)
     for _ in range(3):
-        radius += step
-        sd.circle(center_position=point, radius=radius, color=sd.COLOR_RED, width=2)
+        #radius += step
+        sd.circle(center_position=point, radius=step, color=all_col[col], width=15)
+
+
+bubble(point=sd.get_point(300, 300), step=10, col=2)
 
 # Нарисовать 10 пузырьков в ряд
-# TODO здесь ваш код
-
 for x in range(100, 1001, 100):
-    bubble(point=sd.get_point(x, 100), step=5, radius=50)
+    bubble(point=sd.get_point(x, 100), step=5, col=3)
 
 # Нарисовать три ряда по 10 пузырьков
-# TODO здесь ваш код
-
+# Здесь используется вложенный цикл
 for y in range(100, 301, 100):
     for x in range(100, 1001, 100):
-        bubble(point=sd.get_point(x, y), step=5, radius=50)
+        bubble(point=sd.get_point(x, y), step=10, col=6)
+        #sd.circle(center_position=sd.get_point(x, y), radius=15, color=sd.COLOR_BLACK, width=15)
 
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
-# TODO здесь ваш код
 
 import random as rnd
 
-rainbow_colors = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN,
-                  sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE)
-
-for i in range(100):
-    bubble((rnd.randint(10,1290), rnd.randint(10,590)),step=5, radius=10, )
-           #color=(rnd.randint(0,255),rnd.randint(0,255),rnd.randint(0,255)))
+for _ in range(100):
+    bubble(point=sd.random_point(), step=5, col=rnd.randint(0,9))
 
 sd.pause()

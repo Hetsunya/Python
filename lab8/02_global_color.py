@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import simple_draw as sd
+from lab8.practice import simple_draw as sd
 
 # Добавить цвет в функции рисования геом. фигур. из упр 01_shapes.py
 # (код функций скопировать сюда и изменить)

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import simple_draw as sd
+from lab8.practice import simple_draw as sd
 
 # 1) Написать функцию draw_branches, которая должна рисовать две ветви дерева из начальной точки
 # Функция должна принимать параметры:

@@ -1,48 +1,33 @@
-"""Функция принимает число n, цифры которого стоят в порядке возрастания
-и возвращает количество пропущенных цифр в этом числе.
->> > missing_digits(1248)  # пропущены 3, 5, 6, 7
-4
->> > missing_digits(1122)  # нет пропущенных
-0
->> > missing_digits(123456)  # нет пропущенных
-0
->> > missing_digits(3558)  # пропущены 4, 6, 7
-3
->> > missing_digits(35578)  # пропущены 4, 6
-2
->> > missing_digits(12456)  # пропущена 3
-1
->> > missing_digits(16789)  # пропущены 2, 3, 4, 5
-4
->> > missing_digits(19)  # пропущены 2, 3, 4, 5, 6, 7, 8
-7
->> > missing_digits(4)  # между 4 и 4 нет пропущенных
-0
->> > from construct_check import check
->> >  # нельзя использовать циклы
->> > check(LAB_SOURCE_FILE, 'missing_digits', ['While', 'For'])
-True
-"""
-"*** YOUR CODE HERE ***"
-def missing_digits(n):
-    if n > 100:
-        if (n % 10 - n % 100) > 1:
-            return missing_digits(n // 10) + 1
-        else:
-            return missing_digits(n // 10)
-    elif n < 11:
-        return 0
-    else:
-        if n - n % 10 > 1:
-            return missing_digits(n // 10) + 1
-        else:
-            return missing_digits(n // 10)
+def next_largest_coin(coin):
+    """Возвращает следующую монету.
+    >>> next_largest_coin(1)
+    5
+    >>> next_largest_coin(5)
+    10
+    >>> next_largest_coin(10)
+    25
+    >>> next_largest_coin(2) # остальные возвращают None
+    """
+    if coin == 1:
+        return 5
+    elif coin == 5:
+        return 10
+    elif coin == 10:
+        return 25
 
-print(missing_digits(1122))
-print(missing_digits(123456))  # нет пропущенных
-print(missing_digits(3558)) # пропущены 4, 6, 7
-print(missing_digits(35578))  # пропущены 4, 6
-print(missing_digits(12456))  # пропущена 3
-print(missing_digits(16789))  # пропущены 2, 3, 4, 5)
-print(missing_digits(19))  # пропущены 2, 3, 4, 5, 6, 7, 8
-print(missing_digits(4))  # между 4 и 4 нет пропущенных
+def count_coins(total):
+    def monet(n, razmer):
+        if n < 4:
+            return 1
+        elif (n < 0) or (razmer > n) or (razmer == None):
+            return 0
+        else:
+            if razmer == 25:
+                print (25)
+            return monet(n - next_largest_coin(razmer), razmer) + monet(n, next_largest_coin(razmer))
+    return monet(total, 1)
+
+print(count_coins(15))
+print(count_coins(10))
+print(count_coins(20))
+print(count_coins(100))

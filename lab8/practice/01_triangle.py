@@ -35,4 +35,3 @@ for angle in range(0, 361, 30):
     triangle(point=point_0, angle=angle)
 
 sd.pause()
-

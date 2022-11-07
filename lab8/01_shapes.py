@@ -78,16 +78,16 @@ def hexagon(point, angle, length):
         point = v1.end_point
 
 point_triangle = sd.get_point(100, 100)
-triangle(point=point_triangle, angle=50, length=150)
+#triangle(point=point_triangle, angle=50, length=150)
 
 point_square = sd.get_point(400, 100)
-square(point=point_square, angle=20, length=150)
+#square(point=point_square, angle=20, length=150)
 
 point_pentagon = sd.get_point(100, 350)
-pentagon(point=point_pentagon, angle=20, length=100)
+#pentagon(point=point_pentagon, angle=20, length=100)
 
 point_hexagon = sd.get_point(400, 350)
-hexagon(point=point_hexagon, angle=20, length=100)
+#hexagon(point=point_hexagon, angle=20, length=100)
 
 # Часть 1-бис.
 # Попробуйте прикинуть обьем работы, если нужно будет внести изменения в этот код.
@@ -107,8 +107,42 @@ hexagon(point=point_hexagon, angle=20, length=100)
 # Не забудте в этой общей функции придумать, как устранить разрыв в начальной/конечной точках рисуемой фигуры
 # (если он есть. подсказка - на последней итерации можно использовать линию от первой точки)
 
+def vector(vector_start, length, angle):
+    v = sd.get_vector(vector_start, angle, length)
+    return v.end_point
+
+
+def polygon(point, heads, length):
+    angle = 0
+    angle_start = 15
+    angle_polygon = 360 / heads
+    point_polygon = point
+    for _ in range(heads):
+        if _ == 0:
+            angle = angle_start
+        else:
+            angle += angle_polygon
+        if _ < (heads - 1):
+            end_point = vector(point, length, angle)
+        else:
+            end_point = point_polygon
+        sd.line(start_point=point, end_point=end_point, color=sd.COLOR_YELLOW, width=1)
+        point = end_point
+        # t2 = sd.get_vector(t1.end_point, angle + 120, length, 5)
+        # sd.line(start_point=t1.end_point, end_point=t2.end_point, color=sd.COLOR_YELLOW, width=1)
+        # sd.line(start_point=t2.end_point, end_point=point, color=sd.COLOR_YELLOW, width=1)
+
+
+# (point_start_x, point_start_y, length_start, type_of_polygon)
+start_point = [(100, 100, 150, 3), (350, 100, 150, 4), (100, 350, 100, 5), (350, 350, 100, 6)]
+
+for i in start_point:
+    point_start = sd.get_point(i[0], i[1])
+    length_start = i[2]
+    heads_start = i[3]
+    polygon(point_start, heads_start, length_start)
+"""
 def figures(point, angle, length, number_parties):
-    """Общая функция рисования фигур"""
     angle_changes = 360 / number_parties
     start_point = point
 
@@ -123,32 +157,27 @@ def figures(point, angle, length, number_parties):
 
 
 def triangle(point, angle, length):
-    """ Эта функция рисует треугольник"""
-
     figures(point=point, angle=angle, length=length, number_parties=3)
 
-triangle(point=sd.get_point(150, 150), angle=0, length=100)
-
+triangle(point=sd.get_point(150, 150), angle=20, length=80)
 
 def square(point, angle, length):
-    """ Эта функция рисует квадрат"""
     figures(point=point, angle=angle, length=length, number_parties=4)
 
-square(point=sd.get_point(400, 150), angle=0, length=100)
+square(point=sd.get_point(400, 150), angle=20, length=80)
 
 
 def pentagon(point, angle, length):
-    """ Эта функция рисует пятиугольник"""
     figures(point=point, angle=angle, length=length, number_parties=5)
 
-pentagon(point=sd.get_point(150, 400), angle=0, length=100)
+pentagon(point=sd.get_point(150, 400), angle=20, length=80)
 
 
 def hexagon(point, angle, length):
-    """ Эта функция рисует шестиугольник"""
     figures(point=point, angle=angle, length=length, number_parties=6)
 
-hexagon(point=sd.get_point(400, 400), angle=0, length=100)
+hexagon(point=sd.get_point(400, 400), angle=20, length=80)
+"""
 
 # Часть 2-бис.
 # А теперь - сколько надо работы что бы внести изменения в код? Выгода на лицо :)

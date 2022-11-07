@@ -5,27 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab8/practice/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/practice/simple_draw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/simple_draw0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab6/b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/simple_draw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/my_burger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/rainbow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/simple_draw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/smile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/snow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/three.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/packet_draw/wall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/simple_draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/00_bubbles.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/00_bubbles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/07_wall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/07_wall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/a.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/.ok_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/lab05.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/lab05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/tests/hof-wwpd.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/tests/hof-wwpd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/tests/lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/tests/lambda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/a.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab7/lab07.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/lab07.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab7/tests/list-indexing.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/tests/list-indexing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab8/01_shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/01_shapes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab8/02_global_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/02_global_color.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab8/03_shape_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/03_shape_select.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab8/04_fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/04_fractal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab8/05_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/05_snowfall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/lecture_snippets/03_arbitrary_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/lecture_snippets/03_arbitrary_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/practice/01_triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/practice/01_triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/a.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/01_inhabitants.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/01_inhabitants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/02_district.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/02_district.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/03_burger.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/03_burger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/04_painting.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/04_painting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +57,26 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2G6bIVioirXKpXs4As9BuBsb9Vm" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/Задания/Python/lab8&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "B:/Задания/Python/lab9/packet_draw",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\Задания\Python\lab9\packet_draw" />
+      <recent name="B:\Задания\Python\lab9" />
       <recent name="B:\Задания\Python\lab8" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,8 +84,8 @@
       <recent name="B:\Задания\Python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.01_shapes">
-    <configuration name="01_shapes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.07_wall">
+    <configuration name="02_district" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +93,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/01_shapes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/02_district.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_fractal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="03_burger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +114,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/practice/02_fractal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/03_burger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_snowflake" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="04_painting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +135,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/practice/02_snowflake.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/04_painting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.01_shapes" />
-        <item itemvalue="Python.08_smile" />
         <item itemvalue="Python.07_wall" />
-        <item itemvalue="Python.02_snowflake" />
-        <item itemvalue="Python.02_fractal" />
+        <item itemvalue="Python.08_smile" />
+        <item itemvalue="Python.04_painting" />
+        <item itemvalue="Python.03_burger" />
+        <item itemvalue="Python.02_district" />
       </list>
     </recent_temporary>
   </component>

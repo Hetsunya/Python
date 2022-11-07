@@ -19,9 +19,22 @@
 # пример см. results/04_painting.jpg
 # Приправить своей фантазией по вкусу (коты? коровы? люди? трактор? что придумается)
 
+import simple_draw as sd
+from packet_draw import rainbow, smile, three, wall, snow
 
+
+sd.resolution = (1200, 600)
+
+rainbow.rainbow(point=sd.get_point(400, -250), step=10)
+three.three(point=sd.get_point(1000, 10), angle=90, length=100, delta=30)
+wall.wall()
+smile.smile(x=565, y=140, color=sd.COLOR_DARK_PURPLE)
+snow.snow()
+
+sd.pause()
 
 # Усложненное задание (делать по желанию)
 # Анимировать картину.
 # Пусть слева идет снегопад, радуга переливается цветами, смайлик моргает, солнце крутит лучами, етс.
 # Задержку в анимировании все равно надо ставить, пусть даже 0.01 сек - так библиотека устойчивей работает.
+sd.pause()

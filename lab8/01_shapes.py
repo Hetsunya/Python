@@ -128,12 +128,7 @@ def polygon(point, heads, length):
             end_point = point_polygon
         sd.line(start_point=point, end_point=end_point, color=sd.COLOR_YELLOW, width=1)
         point = end_point
-        # t2 = sd.get_vector(t1.end_point, angle + 120, length, 5)
-        # sd.line(start_point=t1.end_point, end_point=t2.end_point, color=sd.COLOR_YELLOW, width=1)
-        # sd.line(start_point=t2.end_point, end_point=point, color=sd.COLOR_YELLOW, width=1)
 
-
-# (point_start_x, point_start_y, length_start, type_of_polygon)
 start_point = [(100, 100, 150, 3), (350, 100, 150, 4), (100, 350, 100, 5), (350, 350, 100, 6)]
 
 for i in start_point:

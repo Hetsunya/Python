@@ -55,9 +55,6 @@ while True:
         sd.sleep(0.1)
         if sd.user_want_exit():
             break
-
-    pass
-    pass
     sd.sleep(0.1)
     if sd.user_want_exit():
         break

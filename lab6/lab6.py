@@ -171,16 +171,27 @@ def count_coins(total):
     True
     """
     "*** YOUR CODE HERE ***"
-    def coins(n, exchange):
+    def helper(lowest, n):
+        if (lowest == None):
+            return 0
+        elif (lowest == n):
+            return 1
+        elif (lowest > n):
+            return 0
+        #with_coin = helper(lowest, n - lowest)
+        #without_coin = helper(next_largest_coin(lowest), n)
+        return helper(lowest, n - lowest) + helper(next_largest_coin(lowest), n)
+    return helper(1, total)
+    """
+        def coins(n, exchange):
         if n < 4:
             return 1
         elif (n < 0) or (exchange > n) or (exchange == None):
             return 0
-        #elif(n > 25):
-            #return 242
         else:
             return coins(n - next_largest_coin(exchange), exchange) + coins(n, next_largest_coin(exchange))
     return coins(total, 1)
+    """
 
 from operator import sub, mul
 

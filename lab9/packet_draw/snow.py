@@ -9,7 +9,7 @@ def snow():
     y_point = [sd.random_number(0, 0) for _ in range(n)]
     length_list = [sd.random_number(10, 30) for _ in range(n)]
 
-    sd.circle(center_position=sd.get_point(50, 600), color=sd.COLOR_RED, radius=90, width=89)
+    sd.circle(center_position=sd.get_point(50, 600), color=sd.COLOR_YELLOW, radius=90, width=89)
 
     while True:
 

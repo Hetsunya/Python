@@ -16,6 +16,7 @@ sd.resolution = (1200, 600)
 
 rainbow_colors = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN,
                   sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE)
+"""
 y1 = 50
 y2 = 450
 for col in rainbow_colors:
@@ -25,6 +26,7 @@ for col in rainbow_colors:
     point2 = sd.get_point(350, y2)
 
     sd.line(start_point=point1, end_point=point2, color=col, width=4)
+    """
 
 #sd.pause()
 
@@ -33,10 +35,10 @@ for col in rainbow_colors:
 # поэкспериментировать с параметрами, что бы было красиво
 # TODO здесь ваш код
 
-radius = 600
-point = sd.get_point(650, -100)
+radius = 800
+point = sd.get_point(850, -400)
 for col in rainbow_colors:
-    radius += 5
-    sd.circle(center_position=point, radius=radius, color=col, width=7)
+    radius += 10
+    sd.circle(center_position=point, radius=radius, color=col, width=6)
 
 sd.pause()

@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lab10/Data.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/sample.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/save_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/testxls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a/pythonbase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/lab10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/lab10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab11/python_snippets/02_attrs_and_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/python_snippets/02_attrs_and_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/00_bubbles.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/00_bubbles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/01_days_in_month.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/01_days_in_month.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/06_rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/06_rainbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/07_wall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/07_wall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/08_smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/08_smile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/01_shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/01_shapes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/03_shape_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/03_shape_select.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/04_fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/04_fractal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/05_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/05_snowfall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/01_inhabitants.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/01_inhabitants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/02_district.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/02_district.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/smile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/snow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/snow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +61,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/Задания/Python/lab9/packet_draw&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "B:/Задания/Python/lab9/packet_draw",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="B:\Задания\Python\lab9\packet_draw" />
@@ -59,7 +81,7 @@
       <recent name="B:\Задания\Python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03_shape_select">
+  <component name="RunManager" selected="Python.testxls">
     <configuration name="01_inhabitants" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03_shape_select" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="02_district" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,11 +111,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/03_shape_select.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/02_district.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="04_fractal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="04_painting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,11 +132,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/04_fractal.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/04_painting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07_wall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lab10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +153,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab4/07_wall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/lab10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +166,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="08_smile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testxls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +174,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab4/08_smile.py" />
+      <option name="SCRIPT_NAME" value="B:\Задания\Python\lab10\testxls.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.03_shape_select" />
-        <item itemvalue="Python.04_fractal" />
+        <item itemvalue="Python.testxls" />
         <item itemvalue="Python.01_inhabitants" />
-        <item itemvalue="Python.07_wall" />
-        <item itemvalue="Python.08_smile" />
+        <item itemvalue="Python.lab10" />
+        <item itemvalue="Python.04_painting" />
+        <item itemvalue="Python.02_district" />
       </list>
     </recent_temporary>
   </component>

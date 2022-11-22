@@ -54,6 +54,3 @@ print(robot.weight)
 # getattr(object, name, default=None) - получение атрибута
 print(getattr(robot, 'weight'))
 print(getattr(robot, 'speed', 10))
-
-
-

@@ -29,7 +29,6 @@ def polygon(heads):
     point = vector(center, radius, -(90 + angle_center))
     point_polygon = point
     color_paint = color_rainbow[6]
-    sd.circle(center_position=center, radius=2, color=color_rainbow[0], width=1)
     for _ in range(heads):
         if _ == 0:
             angle = angle_start
@@ -45,11 +44,11 @@ def polygon(heads):
 vertex_input = 1
 
 while vertex_input:
-    vertex_input = input('Возможные цвета:\n'
-                        '   0: треугольник.\n'
-                        '   1: квадрат\n'
-                        '   2: пятиугольник\n'
-                        '   3: шестиугольник\n')
+    vertex_input = input('Выберите фигуру:\n'
+                        '   1: треугольник.\n'
+                        '   2: квадрат\n'
+                        '   3: пятиугольник\n'
+                        '   4: шестиугольник\n')
     if vertex_input.isnumeric():
         vertex_input = int(vertex_input)
         if vertex_input < 0 or vertex_input > 3:
@@ -59,13 +58,13 @@ while vertex_input:
         print('Вы ввели некорректный номер!')
         continue
 
-    if vertex_input == 0:
+    if vertex_input == 1:
         heads_start = 3
-    elif vertex_input == 1:
-        heads_start = 4
     elif vertex_input == 2:
-        heads_start = 5
+        heads_start = 4
     elif vertex_input == 3:
+        heads_start = 5
+    elif vertex_input == 4:
         heads_start = 6
 
     polygon(heads_start)

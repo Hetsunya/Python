@@ -97,21 +97,21 @@ def read_eval_print_loop():
 WELCOME_MESSAGE = """
 Welcome to Magic: The Lambda-ing!
 
-Your code has taken on a mind of its own and has
-challenged you to a game of cards! If you need a refresher
+Your code has taken on a.py mind of its own and has
+challenged you to a.py game of cards! If you need a.py refresher
 on the rules, check out the section on the project page.
 
 Let's get this duel started, shall we?
 """
 
 WIN_MESSAGE = """
-You have vanquished your foe in a duel!
+You have vanquished your foe in a.py duel!
 
 Congratulations! You won this game of Magic: The Lambda-ing!
 """
 
 LOSE_MESSAGE = """
-You have been defeated by your foe in a duel!
+You have been defeated by your foe in a.py duel!
 
 I'm sorry, you lost this game of Magic: The Lambda-ing.
 """

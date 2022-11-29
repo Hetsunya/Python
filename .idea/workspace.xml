@@ -5,29 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab10/Data.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab10/sample.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab10/save_module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab10/testxls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/Tile result.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/laminat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/laminat/calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/laminat/save_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/tile/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/tile/calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/tile/save_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/wallpaper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/wallpaper/calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab10/package/wallpaper/save_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a/pythonbase" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/06_songs_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/06_songs_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/Data.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab10/lab10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/lab10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab11/python_snippets/02_attrs_and_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/python_snippets/02_attrs_and_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/00_bubbles.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/00_bubbles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/01_days_in_month.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/01_days_in_month.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/06_rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/06_rainbow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/07_wall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/07_wall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/08_smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/08_smile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/01_shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/01_shapes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/03_shape_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/03_shape_select.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/04_fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/04_fractal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/05_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/05_snowfall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/01_inhabitants.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/01_inhabitants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/02_district.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/02_district.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/smile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/snow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/snow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/sample.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/Wallpaper result.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/save_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/cardgame.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/cardgame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/construct_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/construct_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/lab12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/lab12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/Lab.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/Lab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/lab03.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/tests/debugging-quiz.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/tests/debugging-quiz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/03_division.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/03_division.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/simple_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/simple_draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/simple_draw0.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/simple_draw0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/tests/lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/tests/lambda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/construct_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/construct_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/construct_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/construct_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/lab07.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/lab07.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/lecture_snippets/03_arbitrary_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/lecture_snippets/03_arbitrary_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/lecture_snippets/05_builtin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/lecture_snippets/05_builtin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/practice/simple_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/practice/simple_draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/simple_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/simple_draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/simple_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/simple_draw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/simple_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/simple_draw.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +83,26 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "B:/Задания/Python/lab9/packet_draw",
+    "last_opened_file_path": "B:/Задания/Python/lab10/package/laminat",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="B:\Задания\Python\lab9\packet_draw" />
-      <recent name="B:\Задания\Python\lab9" />
-      <recent name="B:\Задания\Python\lab8" />
+      <recent name="B:\Задания\Python\lab10\package\laminat" />
+      <recent name="B:\Задания\Python\lab10\package\tile" />
+      <recent name="B:\Задания\Python\lab10\package\wallpaper" />
+      <recent name="B:\Задания\Python\lab10\package" />
+      <recent name="B:\Задания\Python\lab10\package2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Задания\Python\lab10\package\wallpaper" />
+      <recent name="B:\Задания\Python\lab10\package" />
       <recent name="B:\Задания\Python\lab8\practice" />
       <recent name="B:\Задания\Python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.testxls">
+  <component name="RunManager" selected="Python.lab10">
     <configuration name="01_inhabitants" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,27 +116,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/01_inhabitants.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="02_district" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab9" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab9/02_district.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,6 +166,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testxls (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/testxls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testxls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lab10" />
+        <item itemvalue="Python.testxls (1)" />
         <item itemvalue="Python.testxls" />
         <item itemvalue="Python.01_inhabitants" />
-        <item itemvalue="Python.lab10" />
         <item itemvalue="Python.04_painting" />
-        <item itemvalue="Python.02_district" />
       </list>
     </recent_temporary>
   </component>

@@ -1,19 +1,19 @@
 class Account:
-    """An account has a balance and a holder.
-    >>> a = Account('John')
-    >>> a.deposit(10)
+    """An account has a.py balance and a.py holder.
+    >>> a.py = Account('John')
+    >>> a.py.deposit(10)
     10
-    >>> a.balance
+    >>> a.py.balance
     10
-    >>> a.interest
+    >>> a.py.interest
     0.02
-    >>> a.time_to_retire(10.25) # 10 -> 10.2 -> 10.404
+    >>> a.py.time_to_retire(10.25) # 10 -> 10.2 -> 10.404
     2
-    >>> a.balance               # balance should not change
+    >>> a.py.balance               # balance should not change
     10
-    >>> a.time_to_retire(11)    # 10 -> 10.2 -> ... -> 11.040808032
+    >>> a.py.time_to_retire(11)    # 10 -> 10.2 -> ... -> 11.040808032
     5
-    >>> a.time_to_retire(100)
+    >>> a.py.time_to_retire(100)
     117
     """
     max_withdrawal = 10
@@ -45,7 +45,7 @@ class FreeChecking(Account):
     """A bank account that charges for withdrawals, but the first two are free!
     >>> ch = FreeChecking('Jack')
     >>> ch.balance = 20
-    >>> ch.withdraw(100)  # First one's free. Still counts as a free withdrawal even though it was unsuccessful
+    >>> ch.withdraw(100)  # First one's free. Still counts as a.py free withdrawal even though it was unsuccessful
     'Insufficient funds'
     >>> ch.withdraw(3)    # Second withdrawal is also free
     17
@@ -59,7 +59,7 @@ class FreeChecking(Account):
     >>> ch2.balance = 10
     >>> ch2.withdraw(3) # No fee
     7
-    >>> ch.withdraw(3)  # ch still charges a fee
+    >>> ch.withdraw(3)  # ch still charges a.py fee
     5
     >>> ch.withdraw(5)  # Not enough to cover fee + withdraw
     'Insufficient funds'

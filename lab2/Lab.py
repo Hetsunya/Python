@@ -22,25 +22,25 @@ def laba():
                         break
     '''
     goal = False
-    a = 1
+    a.py = 1
     b = 2
     c = 3
     n = 0
     while(goal == False):
-        if (n**3 == (a**3 + b**3 + c**3)):
+        if (n**3 == (a.py**3 + b**3 + c**3)):
             print('N-->',n)
-            print('N1-->',a)
+            print('N1-->',a.py)
             print('N2-->',b)
             print('N3-->',c)
             goal = True
     
-        if(a>10):
-            a = 2
+        if(a.py>10):
+            a.py = 2
             b = 3
             c = 4
             n+=1
     
-        a+=1
+        a.py+=1
         b+=1
         c+=1
     
@@ -59,10 +59,10 @@ def laba():
         for n in range(1, 10):
             #ВОЗМОЖНО ЗАМЕДЛЯЕТ
             #for z in range(0, len(g)):
-                #if (a ** 3 + b ** 3 + c ** 3) == g[z]:
+                #if (a.py ** 3 + b ** 3 + c ** 3) == g[z]:
                     #continue
             #for z in range(0, len(g)):
-               #if (a ** 3 + b ** 3 + c ** 3) == g[z]:
+               #if (a.py ** 3 + b ** 3 + c ** 3) == g[z]:
                     #break
             if (n ** 3 == (a ** 3 + b ** 3 + c ** 3)):
                 digits.append(n)

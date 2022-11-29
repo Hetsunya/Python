@@ -203,7 +203,7 @@ def invert_color(color):
 
 def random_number(a=0, b=300):
     """
-        Выдать случайное целое из диапазона [a,b]
+        Выдать случайное целое из диапазона [a.py,b]
     """
     return randint(a, b)
 

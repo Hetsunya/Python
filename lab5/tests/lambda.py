@@ -15,8 +15,8 @@ test = {
           'hidden': False,
           'locked': False,
           'question': r"""
-          Which of the following statements describes a difference between a def statement
-          and a lambda expression?
+          Which of the following statements describes a.py difference between a.py def statement
+          and a.py lambda expression?
           """
         },
         {
@@ -31,20 +31,20 @@ test = {
           'locked': False,
           'question': r"""
           How many parameters does the following lambda expression have?
-          lambda a, b: c + d
+          lambda a.py, b: c + d
           """
         },
         {
           'answer': 'When the function returned by the lambda expression is called.',
           'choices': [
             'When the function returned by the lambda expression is called.',
-            'When you assign the lambda expression to a name.',
+            'When you assign the lambda expression to a.py name.',
             'When the lambda expression is evaluated.',
             'When you pass the lambda expression into another function.'
           ],
           'hidden': False,
           'locked': False,
-          'question': 'When is the return expression of a lambda expression executed?'
+          'question': 'When is the return expression of a.py lambda expression executed?'
         }
       ],
       'scored': False,
@@ -57,10 +57,10 @@ test = {
           >>> # If Python displays <function...>, type Function, if it errors type Error
           >>> lambda x: x  # A lambda expression with one parameter x
           Function
-          >>> a = lambda x: x  # Assigning a lambda function to the name a
-          >>> a(5)
+          >>> a.py = lambda x: x  # Assigning a.py lambda function to the name a.py
+          >>> a.py(5)
           5
-          >>> (lambda: 3)()  # Using a lambda expression as an operator in a call exp.
+          >>> (lambda: 3)()  # Using a.py lambda expression as an operator in a.py call exp.
           3
           >>> b = lambda x: lambda: x  # Lambdas can return other lambdas!
           >>> c = b(88)

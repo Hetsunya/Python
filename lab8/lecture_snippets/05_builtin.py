@@ -43,7 +43,7 @@ my_tuple = (1, 2, 3, 3, 2, 1)
 list(my_tuple)
 set(my_tuple)
 
-dict([('a', 2), ('b', 3), ])
+dict([('a.py', 2), ('b', 3), ])
 
 
 # --- Числа ---

@@ -30,9 +30,9 @@ test = {
         {
           'answer': 'e415098d79d97b14a9c3ed4bb799941c',
           'choices': [
-            'the code attempted to add a string to an integer',
+            'the code attempted to add a.py string to an integer',
             'the code looped infinitely',
-            'there was a missing return statement'
+            'there was a.py missing return statement'
           ],
           'hidden': False,
           'locked': True,
@@ -87,7 +87,7 @@ test = {
           ],
           'hidden': False,
           'locked': True,
-          'question': 'How do you write a doctest asserting that square(2) == 4?'
+          'question': 'How do you write a.py doctest asserting that square(2) == 4?'
         },
         {
           'answer': 'f48da7442af11bddcb273308a88a9970',
@@ -121,7 +121,7 @@ test = {
           ],
           'hidden': False,
           'locked': True,
-          'question': 'What is the best way to open an interactive terminal to investigate a failing test for question sum_digits in assignment lab01?'
+          'question': 'What is the best way to open an interactive terminal to investigate a.py failing test for question sum_digits in assignment lab01?'
         },
         {
           'answer': '6e09ba6ceb51b75e23dd4d881a6f277b',
@@ -133,14 +133,14 @@ test = {
           ],
           'hidden': False,
           'locked': True,
-          'question': 'What is the best way to look at an environment diagram to investigate a failing test for question sum_digits in assignment lab01?'
+          'question': 'What is the best way to look at an environment diagram to investigate a.py failing test for question sum_digits in assignment lab01?'
         },
         {
           'answer': '5c1e38494cf0399527b69ad7bd7037f2',
           'choices': [
-            'Code that returns a wrong answer instead of crashing is generally better as it at least works fine',
+            'Code that returns a.py wrong answer instead of crashing is generally better as it at least works fine',
             'Testing is very important to ensure robust code',
-            'Debugging is not a substitute for testing',
+            'Debugging is not a.py substitute for testing',
             'It is generally bad practice to release code with debugging print statements left in',
             'It is generally good practice to release code with assertion statements left in'
           ],
@@ -153,48 +153,48 @@ test = {
           'choices': [
             'You had an unmatched parenthesis',
             'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
+            'You forgot a.py return statement',
+            'You typed a.py variable name incorrectly'
           ],
           'hidden': False,
           'locked': True,
-          'question': 'You get a SyntaxError. What is most likely to have happened?'
+          'question': 'You get a.py SyntaxError. What is most likely to have happened?'
         },
         {
           'answer': '12da8f0e726f72da45b4fbde67210b74',
           'choices': [
             'You had an unmatched parenthesis',
             'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
+            'You forgot a.py return statement',
+            'You typed a.py variable name incorrectly'
           ],
           'hidden': False,
           'locked': True,
-          'question': 'You get a IndentationError. What is most likely to have happened?'
+          'question': 'You get a.py IndentationError. What is most likely to have happened?'
         },
         {
           'answer': 'af7bf6f5e80555885d574f5a2ab3153f',
           'choices': [
             'You had an unmatched parenthesis',
             'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
+            'You forgot a.py return statement',
+            'You typed a.py variable name incorrectly'
           ],
           'hidden': False,
           'locked': True,
-          'question': "You get a TypeError: ... 'NoneType' object is not ... . What is most likely to have happened?"
+          'question': "You get a.py TypeError: ... 'NoneType' object is not ... . What is most likely to have happened?"
         },
         {
           'answer': '1d0b04e3bcf143b57b5f0b67e57c6801',
           'choices': [
             'You had an unmatched parenthesis',
             'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
+            'You forgot a.py return statement',
+            'You typed a.py variable name incorrectly'
           ],
           'hidden': False,
           'locked': True,
-          'question': 'You get a NameError. What is most likely to have happened?'
+          'question': 'You get a.py NameError. What is most likely to have happened?'
         }
       ],
       'scored': False,

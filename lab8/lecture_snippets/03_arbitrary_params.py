@@ -68,7 +68,7 @@ print_them_all_v3(1000, 'рублей', **my_friend)
 # При создании функции можно указывать как обычные параметры, так и произвольные параметры
 def print_them_all_v4(a, b=5, *args, **kwargs):
     print('print_them_all_v4')
-    print('a и b:', a, b)
+    print('a.py и b:', a, b)
     print('тип args:', type(args))
     print(args)
     for i, arg in enumerate(args):

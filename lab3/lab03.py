@@ -30,8 +30,8 @@ def sum_digits(y):
     12
     >>> sum_digits(1234567890)
     45
-    >>> a = sum_digits(123)
-    >>> a
+    >>> a.py = sum_digits(123)
+    >>> a.py
     6
     """
     "*** YOUR CODE HERE ***"

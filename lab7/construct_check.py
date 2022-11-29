@@ -77,7 +77,7 @@ def check(source_file, checked_funcs, disallow, source=None):
     """Checks that AST nodes whose type names are present in DISALLOW
     (an object supporting 'in') are not present in the function(s) named
     CHECKED_FUNCS in SOURCE.  By default, SOURCE is the contents of the
-    file SOURCE_FILE.  CHECKED_FUNCS is either a string (indicating a single
+    file SOURCE_FILE.  CHECKED_FUNCS is either a.py string (indicating a.py single
     name) or an object of some other type that supports 'in'. CHECKED_FUNCS
     may contain __main__ to indicate an entire  module. Prints reports of
     each prohibited node and returns True iff none are found.
@@ -88,9 +88,9 @@ def check(source_file, checked_funcs, disallow, source=None):
 
 class ExclusionChecker(NodeVisitor):
     """An AST visitor that checks that certain constructs are excluded from
-    parts of a program.  ExclusionChecker(EXC) checks that AST node types
+    parts of a.py program.  ExclusionChecker(EXC) checks that AST node types
     whose names are in the sequence or set EXC are not present.  Its check
-    method visits nodes in a given function of a source file checking that the
+    method visits nodes in a.py given function of a.py source file checking that the
     indicated node types are not used."""
 
     def __init__(self, disallow=()):
@@ -148,7 +148,7 @@ class ExclusionChecker(NodeVisitor):
         the function(s) named CHECKED_FUNCS in SOURCE.  By default, SOURCE
         is the contents of the file SOURCE_FILE.  DISALLOW defaults to the
         argument given to the constructor (and resets that value if it is
-        present).  CHECKED_FUNCS is either a string (indicating a single
+        present).  CHECKED_FUNCS is either a.py string (indicating a.py single
         name) or an object of some other type that supports 'in'.
         CHECKED_FUNCS may contain __main__ to indicate an entire module.
         Prints reports of each prohibited node and returns True iff none

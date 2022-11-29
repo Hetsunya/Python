@@ -142,7 +142,7 @@ def add_chars(w1, w2):
     'on'
     >>> add_chars("rat", "radiate")
     'diae'
-    >>> add_chars("a", "prepare")
+    >>> add_chars("a.py", "prepare")
     'prepre'
     >>> add_chars("resin", "recursion")
     'curo'

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-
-from lab8.practice import simple_draw as sd
+import simple_draw as sd
 
 # 1) Написать функцию draw_branches, которая должна рисовать две ветви дерева из начальной точки
 # Функция должна принимать параметры:
@@ -94,7 +93,7 @@ point_root = sd.get_point(300, 0)
 point_end = sd.get_vector(point_root, angle_root, length_root/2).end_point
 sd.line(start_point=point_root, end_point=point_end, color=sd.COLOR_YELLOW, width=1)
 
-root_point = sd.get_point(300, 30)
+root_point = sd.get_point(300, 60)
 draw_branches(point_start=root_point, angle_start=90, length_start=100)
 
 sd.pause()

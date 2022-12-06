@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
-from openpyxl import *
+import openpyxl
 
 def  L_data_Save(data_quantity, data_cost):
-    wb = Workbook()
+    wb = openpyxl.open("Result.xlsx", read_only=False)
 
     # grab the active worksheet
     ws = wb.active
 
     # Data can be assigned directly to cells
-    ws['A1'] = "Количество:"
-    ws['B1'] = data_quantity
+    ws['A1'] = 'Laminat'
+    ws['A2'] = "Количество:"
+    ws['B2'] = data_quantity
 
-    ws['A2'] = "Общая цена:"
-    ws['B2'].value = data_cost
+    ws['A3'] = "Общая цена:"
+    ws['B3'].value = data_cost
 
-    wb.save("Laminat result.xlsx")
+    wb.save("Result.xlsx")
 

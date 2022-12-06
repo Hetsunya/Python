@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from lab8.practice import simple_draw as sd
+import simple_draw as sd
 
 # Часть 1.
 # Написать функции рисования равносторонних геометрических фигур:

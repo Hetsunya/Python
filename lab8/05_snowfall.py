@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from lab8.practice import simple_draw as sd
+import simple_draw as sd
 
 # На основе кода из практической части реализовать снегопад:
 # - создать списки данных для отрисовки N снежинок
 # - нарисовать падение этих N снежинок
 # - создать список рандомных длинн лучей снежинок (от 10 до 100) и пусть все снежинки будут разные
-
-N = 20
+N = 70
+width = 900
+height = 800
+sd.resolution = (width, height)
 
 # Пригодятся функции
 # sd.get_point()
@@ -16,19 +18,47 @@ N = 20
 # sd.random_number()
 # sd.user_want_exit()
 
-
-snowflakes = list()
-for i in range(N):
-    snowflakes.append({"length": sd.random_number(10, 100), "point": sd.random_point()})
+x_point = [sd.random_number(10, 1190) for _ in range(N)]
+y_point = [sd.random_number(1190, 1480) for _ in range(N)]
+length_list = [sd.random_number(10, 30) for _ in range(N)]
+factor_a_list = [sd.random_number(4, 7) / 10 for _ in range(N)]
+factor_b_list = [sd.random_number(4, 7) / 10 for _ in range(N)]
+factor_c_list = [sd.random_number(45, 60) for _ in range(N)]
 
 while True:
-    sd.clear_screen()
-    # TODO здесь ваш код
-    for snowflake_data in snowflakes:
-        sd.snowflake(snowflake_data['point'], snowflake_data['length'], color=sd.background_color)
-        if snowflake_data['point'].y > snowflake_data['length']:
-            snowflake_data['point'].y -= 10
-        sd.snowflake(snowflake_data['point'], snowflake_data['length'])
+
+    for i in range(N):
+
+        sd.snowflake(center=sd.get_point(x_point[i], y_point[i]),
+                                         length=length_list[i],
+                                         color=sd.background_color,
+                                         factor_a = factor_a_list[i],
+                                         factor_b = factor_b_list[i],
+                                         factor_c = factor_c_list[i])
+        y_point[i] -= 30
+        x_point[i] += sd.randint(-30,30)
+        sd.snowflake(center=sd.get_point(x_point[i], y_point[i]),
+                                         length=length_list[i],
+                                         color=sd.COLOR_WHITE,
+                                         factor_a = factor_a_list[i],
+                                         factor_b = factor_b_list[i],
+                                         factor_c = factor_c_list[i])
+
+        if y_point[i] < -10:
+            y_point[i] += sd.random_number(1190, 1380)
+            sd.snowflake(center=sd.get_point(x_point[i], y_point[i]),
+                                         length=length_list[i],
+                                         color=sd.background_color,
+                                         factor_a = factor_a_list[i],
+                                         factor_b = factor_b_list[i],
+                                         factor_c = factor_c_list[i])
+
+        sd.snowflake(center=sd.get_point(x_point[i], y_point[i]),
+                                         length=length_list[i],
+                                         color=sd.COLOR_WHITE,
+                                         factor_a = factor_a_list[i],
+                                         factor_b = factor_b_list[i],
+                                         factor_c = factor_c_list[i])
     sd.sleep(0.1)
     if sd.user_want_exit():
         break

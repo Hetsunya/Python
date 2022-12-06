@@ -10,7 +10,7 @@ from package.tile.calculation import *
 
 from guizero import *
 
-app = App("Lab10", layout="grid", height= 180, width=185)
+app = App("Lab10", layout="grid", height= 180, width=200)
 wallpaper_app = App(title="Обои", layout="grid", height= 321, width=314)
 tile_app = App("Плитка", layout="grid", height= 310, width=340)
 laminate_app = App("Ламинат", layout="grid", height= 290, width=340)
@@ -94,10 +94,10 @@ def wallpaper():
 
 
     def  W_calc_quantity():
-        W_result_TextBox.value = calculation_quantity(float(length_Room.value), float(width_Room.value),
-                                           float(height_Room.value), float(width_Roll.value), float(length_Roll.value))
+        W_result_TextBox.value = round(calculation_quantity(float(length_Room.value), float(width_Room.value),
+                                           float(height_Room.value), float(width_Roll.value), float(length_Roll.value)), 1)
     def  W_calc_cost():
-        result_cost_TextBox.value = calculation_quantity(float(W_result_TextBox.value), float(cost_Roll.value))
+        result_cost_TextBox.value = round(calculation_quantity(float(W_result_TextBox.value), float(cost_Roll.value)), 1)
 
     def save():
         data_Save(W_result_TextBox.value, result_cost_TextBox.value)
@@ -142,10 +142,11 @@ def tile():
 
 
     def  calc_T_length():
-        T_result_TextBox.value = T_calculation_length(float(T_length_Room.value), float(T_width_Room.value),
-                                           float(T_width_Roll.value), float(T_length_Roll.value))
+        T_result_TextBox.value = round(T_calculation_length(float(T_length_Room.value), float(T_width_Room.value),
+                                           float(T_width_Roll.value), float(T_length_Roll.value)), 1)
     def  calc_T_cost():
-        T_result_cost_TextBox.value = T_calculation_length(float(T_result_TextBox.value), float(T_length_Roll.value))
+        T_result_cost_TextBox.value = round(T_calculation_length(float(T_result_TextBox.value),
+                                                             float(T_length_Roll.value)), 1)
 
     def save():
         data_Save(T_result_TextBox.value, T_result_cost_TextBox.value)
@@ -188,7 +189,8 @@ def  laminat():
                                                       float(width.value)), 1)
 
     def calc_L_cost():
-        L_Result_cost_TextBox.value = L_calculation_cost(float(L_Result_TextBox.value), float(cost.value))
+        L_Result_cost_TextBox.value = round(L_calculation_cost(float(L_Result_TextBox.value),
+                                                     float(cost.value)), 1)
 
     def save():
         L_data_Save(L_Result_TextBox.value, L_Result_cost_TextBox.value)

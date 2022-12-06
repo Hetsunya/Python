@@ -41,28 +41,34 @@ vertex_input = 1
 
 while vertex_input:
     vertex_input = input('Выберите фигуру:\n'
-                        '   1: треугольник.\n'
-                        '   2: квадрат\n'
-                        '   3: пятиугольник\n'
-                        '   4: шестиугольник\n')
+                        '   3: треугольник.\n'
+                        '   4: квадрат\n'
+                        '   5: пятиугольник\n'
+                        '   6: шестиугольник\n'
+                        '   7: 7-угольник\n'
+                        '   8: 8-угольник\n')
 
     if vertex_input.isnumeric():
         vertex_input = int(vertex_input)
-        if vertex_input < 0 or vertex_input > 4:
+        if vertex_input < 2 or vertex_input > 9:
             print('Вы ввели некорректный номер!')
             continue
     else:
         print('Вы ввели некорректный номер!')
         continue
 
-    if vertex_input == 1:
+    if vertex_input == 3:
         heads_start = 3
-    elif vertex_input == 2:
-        heads_start = 4
-    elif vertex_input == 3:
-        heads_start = 5
     elif vertex_input == 4:
+        heads_start = 4
+    elif vertex_input == 5:
+        heads_start = 5
+    elif vertex_input == 6:
         heads_start = 6
+    elif vertex_input == 7:
+        heads_start = 7    
+    elif vertex_input == 8:
+        heads_start = 8    
 
     polygon(heads_start)
     break

@@ -27,30 +27,43 @@ from lab8.practice import simple_draw as sd
 # можно поиграть -шрифтами- цветами и углами отклонения
 
 # TODO здесь ваш код
+#1 ЧАСТЬ
+"""
+def draw_branches(start_point, angle_draw, branches_length):
+    delta_angle = 30
+    vector_1 = sd.get_vector(start_point, angle_draw + delta_angle, branches_length)
+    vector_2 = sd.get_vector(start_point, angle_draw - delta_angle, branches_length)
+    vector_1.draw(width=3)
+    vector_2.draw(width=3)
+
+angle_root = 90
+length_root = 100
+point_root = sd.get_point(300, 0)
+
+draw_branches(point_root, angle_root, 12)
+"""
+#2ЧАСТЬ
 """
 def draw_branches(point_start, angle_start, length_start):
     if length_start < 10:
         return
     angle_list = (-30, 30)
+    sd.line(start_point=point_root, end_point=point_end, color=sd.COLOR_YELLOW, width=1)
     for angle_delta in angle_list:
         angle = angle_start + angle_delta
-        point_end_f = sd.get_vector(point_start, angle, length_start).end_point
-        sd.line(start_point=point_start, end_point=point_end_f, color=sd.COLOR_YELLOW, width=1)
-        draw_branches(point_end_f, angle, length_start * .75)
+        point_end_t= sd.get_vector(point_start, angle, length_start).end_point
+        sd.line(start_point=point_start, end_point=point_end_t, color=sd.COLOR_YELLOW, width=1)
+        draw_branches(point_end_t, angle, length_start * 0.75)
 
+#3ЧАСТЬ
 angle_root = 90
 length_root = 100
 point_root = sd.get_point(300, 0)
 point_end = sd.get_vector(point_root, angle_root, length_root/2).end_point
-sd.line(start_point=point_root, end_point=point_end, color=sd.COLOR_YELLOW, width=1)
 
-draw_branches(point_end, angle_root, length_root)
-sd.pause()
+draw_branches(point_root, angle_root, length_root)
 """
 
-#draw_branches(point_end, angle_root, length_root)
-#3 часть
-#root_point = sd.get_point(300, 30)
 #draw_branches(point_start=root_point, angle_start=90, length_start=100)
 
 # 4) Усложненное задание (делать по желанию) ОНО УЖЕ ВЫШЕ ВЫПОЛНЕННО - РАЗБЕРИСЬ
@@ -59,23 +72,24 @@ sd.pause()
 # Возможный результат решения см results/exercise_04_fractal_02.jpg
 # Пригодятся функции
 # sd.random_number()
+
+
+#4ЧАСТЬ
 def draw_branches(point_start, angle_start, length_start):
     if length_start < 10:
         return
     angle_list = (-30, 30)
     for angle_delta in angle_list:
-        angle_random = sd.random_number(-12, 12)
+        angle_random = sd.random_number(-10, 10)
         angle = angle_start + angle_delta + angle_random
-        # print(angle_random)
         point_end_f = sd.get_vector(point_start, angle, length_start).end_point
         sd.line(start_point=point_start, end_point=point_end_f, color=sd.COLOR_YELLOW, width=1)
-        length_random = sd.random_number(-15, 15) / 100
-        # print(length_random)
-        draw_branches(point_end_f, angle, length_start * (.75 + length_random))
+        length_random = sd.random_number(-10, 10) / 100
+        draw_branches(point_end_f, angle, length_start * (0.75 + length_random))
 
 
 angle_root = 90
-length_root = 100
+length_root = 120
 point_root = sd.get_point(300, 0)
 point_end = sd.get_vector(point_root, angle_root, length_root/2).end_point
 sd.line(start_point=point_root, end_point=point_end, color=sd.COLOR_YELLOW, width=1)

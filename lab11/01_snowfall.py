@@ -9,9 +9,40 @@ import simple_draw as sd
 
 
 class Snowflake:
-    pass
-
     # TODO здесь ваш код
+     def __init__(self):
+         self.x = sd.random_number(100, 500)
+         self.y = sd.random_number(400, 500)
+         self.length = sd.random_number(25, 60)
+         self.f_a = sd.random_number(1, 8)/10
+         self.f_b = sd.random_number(1, 7)/10
+         self.f_c = sd.random_number(35, 65)
+
+     def clear_previous_picture(self):
+         sd.start_drawing()
+         self.point = sd.get_point(self.x, self.y)
+         self.color = sd.background_color
+         sd.snowflake(center=self.point, length=self.length, color=self.color,
+                      factor_a=self.f_a, factor_b=self.f_b, factor_c=self.f_c)
+         sd.finish_drawing()
+
+     def move(self):
+         self.x += sd.random_number(-10, 10)
+         self.y -= sd.random_number(5, 15)
+
+     def draw(self):
+         sd.start_drawing()
+         self.point = sd.get_point(self.x, self.y)
+         self.color = sd.COLOR_WHITE
+         sd.snowflake(center=self.point, length=self.length, color=self.color,
+                      factor_a=self.f_a, factor_b=self.f_b, factor_c=self.f_c)
+         sd.finish_drawing()
+
+     def can_fall(self):
+         if self.y > 15:
+             return True
+         else:
+             return False
 
 
 flake = Snowflake()
@@ -39,5 +70,7 @@ while True:
 #     sd.sleep(0.1)
 #     if sd.user_want_exit():
 #         break
+
+
 
 sd.pause()

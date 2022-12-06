@@ -107,10 +107,6 @@ point_hexagon = sd.get_point(400, 350)
 # Не забудте в этой общей функции придумать, как устранить разрыв в начальной/конечной точках рисуемой фигуры
 # (если он есть. подсказка - на последней итерации можно использовать линию от первой точки)
 
-def vector(vector_start, length, angle):
-    v = sd.get_vector(vector_start, angle, length)
-    return v.end_point
-
 
 def polygon(point, heads, length):
     angle = 0
@@ -123,7 +119,7 @@ def polygon(point, heads, length):
         else:
             angle += angle_polygon
         if _ < (heads - 1):
-            end_point = vector(point, length, angle)
+            end_point = sd.get_vector(point, angle, length).end_point
         else:
             end_point = point_polygon
         sd.line(start_point=point, end_point=end_point, color=sd.COLOR_YELLOW, width=1)
@@ -136,43 +132,6 @@ for i in start_point:
     length_start = i[2]
     heads_start = i[3]
     polygon(point_start, heads_start, length_start)
-"""
-def figures(point, angle, length, number_parties):
-    angle_changes = 360 / number_parties
-    start_point = point
-
-    for i in range(number_parties):
-        angle += angle_changes
-
-        v = sd.get_vector(start_point=start_point, angle=angle, length=length, width=3)
-        v.draw()
-
-        start_point = v.end_point
-    sd.line(start_point=point, end_point=start_point, width=3)
-
-
-def triangle(point, angle, length):
-    figures(point=point, angle=angle, length=length, number_parties=3)
-
-triangle(point=sd.get_point(150, 150), angle=20, length=80)
-
-def square(point, angle, length):
-    figures(point=point, angle=angle, length=length, number_parties=4)
-
-square(point=sd.get_point(400, 150), angle=20, length=80)
-
-
-def pentagon(point, angle, length):
-    figures(point=point, angle=angle, length=length, number_parties=5)
-
-pentagon(point=sd.get_point(150, 400), angle=20, length=80)
-
-
-def hexagon(point, angle, length):
-    figures(point=point, angle=angle, length=length, number_parties=6)
-
-hexagon(point=sd.get_point(400, 400), angle=20, length=80)
-"""
 
 # Часть 2-бис.
 # А теперь - сколько надо работы что бы внести изменения в код? Выгода на лицо :)

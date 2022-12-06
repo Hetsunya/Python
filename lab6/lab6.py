@@ -178,12 +178,12 @@ def count_coins(total):
             return 1
         elif (lowest > n):
             return 0
-        #with_coin = helper(lowest, n - lowest)
-        #without_coin = helper(next_largest_coin(lowest), n)
-        return helper(lowest, n - lowest) + helper(next_largest_coin(lowest), n)
+        with_coin = helper(lowest, n - lowest)
+        without_coin = helper(next_largest_coin(lowest), n)
+        return with_coin + without_coin
     return helper(1, total)
     """
-        def coins(n, exchange):
+    def coins(n, exchange):
         if n < 4:
             return 1
         elif (n < 0) or (exchange > n) or (exchange == None):

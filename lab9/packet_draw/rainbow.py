@@ -7,7 +7,6 @@ def rainbow(point, step):
     radius = 1050
     for color in rainbow_colors:
         radius -= step
-
         sd.circle(center_position=point, radius=radius, color=color, width=19)
 
 

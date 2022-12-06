@@ -17,9 +17,6 @@ import simple_draw as sd
 # TODO здесь ваш код
 color_rainbow = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN,
                  sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE)
-def vector(vector_start, length, angle):
-    v = sd.get_vector(vector_start, angle, length)
-    return v.end_point
 
 def polygon(point, heads, length, color):
     angle = 0
@@ -33,7 +30,7 @@ def polygon(point, heads, length, color):
         else:
             angle += angle_polygon
         if i < (heads - 1):
-            end_point = vector(point, length, angle)
+            end_point = sd.get_vector(point, angle, length).end_point
         else:
             end_point = point_polygon
         sd.line(start_point=point, end_point=end_point, color=color_paint, width=1)
@@ -61,10 +58,10 @@ while color_input:
     else:
         print('Неверный ввод')
         continue
-    for _ in start_point:
-        point_start = sd.get_point(_[0], _[1])
-        length_start = _[2]
-        heads_start = _[3]
+    for i in start_point:
+        point_start = sd.get_point(i[0], i[1])
+        length_start = i[2]
+        heads_start = i[3]
         polygon(point_start, heads_start, length_start, color_input)
     break
 sd.pause()

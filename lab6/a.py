@@ -14,6 +14,8 @@ def next_largest_coin(coin):
         return 10
     elif coin == 10:
         return 25
+    else:
+        return 0
 
 def count_coins(total):
     def monet(n, razmer):
@@ -22,8 +24,6 @@ def count_coins(total):
         elif (n < 0) or (razmer > n) or (razmer == None):
             return 0
         else:
-            if razmer == 25:
-                print (25)
             return monet(n - next_largest_coin(razmer), razmer) + monet(n, next_largest_coin(razmer))
     return monet(total, 1)
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from openpyxl import *
 
-def  data_Save(data_quantity, data_cost):
+def  L_data_Save(data_quantity, data_cost):
     wb = Workbook()
 
     # grab the active worksheet
@@ -14,5 +14,5 @@ def  data_Save(data_quantity, data_cost):
     ws['A2'] = "Общая цена:"
     ws['B2'].value = data_cost
 
-    wb.save("Tile result.xlsx")
+    wb.save("Laminat result.xlsx")
 

@@ -11,9 +11,6 @@ import simple_draw as sd
 
 # TODO здесь ваш код
 from math import sin, radians
-def vector(vector_start, length, angle):
-    v = sd.get_vector(vector_start, angle, length)
-    return v.end_point
 
 color_rainbow = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN,
                      sd.COLOR_CYAN, sd.COLOR_BLUE, sd.COLOR_PURPLE)
@@ -25,17 +22,16 @@ def polygon(heads):
     angle_start = 0
     angle_polygon = 360 / heads
     angle_center = angle_polygon / 2
-    radius = length / (2 * sin(radians(angle_center)))
-    point = vector(center, radius, -(90 + angle_center))
+    point = sd.get_vector(center, -(90 + angle_center), length).end_point
     point_polygon = point
     color_paint = color_rainbow[6]
-    for _ in range(heads):
-        if _ == 0:
+    for i in range(heads):
+        if i == 0:
             angle = angle_start
         else:
             angle += angle_polygon
-        if _ < (heads - 1):
-            end_point = vector(point, length, angle)
+        if i < (heads - 1):
+            end_point = sd.get_vector(point, angle, length).end_point
         else:
             end_point = point_polygon
         sd.line(start_point=point, end_point=end_point, color=color_paint, width=1)
@@ -49,9 +45,10 @@ while vertex_input:
                         '   2: квадрат\n'
                         '   3: пятиугольник\n'
                         '   4: шестиугольник\n')
+
     if vertex_input.isnumeric():
         vertex_input = int(vertex_input)
-        if vertex_input < 0 or vertex_input > 3:
+        if vertex_input < 0 or vertex_input > 4:
             print('Вы ввели некорректный номер!')
             continue
     else:

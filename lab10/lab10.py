@@ -3,15 +3,17 @@
 
 from package.wallpaper.save_module import *
 from package.wallpaper.calculation import *
+from package.laminat.save_module import *
+from package.laminat.calculation import *
 from package.tile.save_module import *
 from package.tile.calculation import *
 
 from guizero import *
 
 app = App("Lab10", layout="grid", height= 180, width=185)
-wallpaper_app = App(title="Обои", layout="grid", height= 350, width=290)
-tile_app = App("Плитка", layout="grid", height= 310, width=290)
-laminate_app = App("Ламинат")
+wallpaper_app = App(title="Обои", layout="grid", height= 321, width=314)
+tile_app = App("Плитка", layout="grid", height= 310, width=340)
+laminate_app = App("Ламинат", layout="grid", height= 290, width=340)
 
 wallpaper_app.hide()
 tile_app.hide()
@@ -162,7 +164,44 @@ def tile():
 
 #РАСЧЕТ ЛАМИНТА
 def  laminat():
-    return  3
+    back_Button = PushButton(laminate_app, text="Назад",
+                             align="left", command=back, grid=[0, 10])
+
+    length_Label_Room = Text(laminate_app, text="Длина команты", grid=[0, 0])
+    length_Room = TextBox(laminate_app, grid=[1, 0])
+    length_Room.value = 0
+
+    width_Label_Room = Text(laminate_app, text="Ширина команты", grid=[0, 1])
+    width_Room = TextBox(laminate_app, grid=[1, 1])
+    width_Room.value = 0
+
+    width_Label_Roll = Text(laminate_app, text="Площадь одной упаковки", grid=[0, 3])
+    width = TextBox(laminate_app, grid=[1, 3])
+    width.value = 0
+
+    cost_Label_Roll = Text(laminate_app, text="Цена одной упаковки", grid=[0, 5])
+    cost = TextBox(laminate_app, grid=[1, 5])
+    cost.value = 0
+
+    def calc_L_length():
+        L_Result_TextBox.value = round(L_calculation_length(float(length_Room.value), float(width_Room.value),
+                                                      float(width.value)), 1)
+
+    def calc_L_cost():
+        L_Result_cost_TextBox.value = L_calculation_cost(float(L_Result_TextBox.value), float(cost.value))
+
+    def save():
+        L_data_Save(L_Result_TextBox.value, L_Result_cost_TextBox.value)
+
+    L_Result_Label = Text(laminate_app, text="Количество плиток", grid=[0, 6])
+    L_Result_TextBox = TextBox(laminate_app, grid=[1, 6])
+    L_Result_Button = PushButton(laminate_app, text="Рассчитать", grid=[1, 7], command=calc_L_length)
+
+    L_result_cost_Label = Text(laminate_app, text="Общая цена", grid=[0, 8])
+    L_Result_cost_TextBox = TextBox(laminate_app, grid=[1, 8])
+    L_Result_cost_Button = PushButton(laminate_app, text="Рассчитать", grid=[1, 9], command=calc_L_cost)
+
+    L_Result_save_Button = PushButton(laminate_app, text="Сохранить результаты", grid=[1, 10], command=save)
 #РАСЧЕТ ЛАМИНТА
 
 

@@ -139,9 +139,9 @@ def tile():
 
     def  calc_T_length():
         T_result_TextBox.value = round(T_calculation_length(float(T_length_Room.value), float(T_width_Room.value),
-                                           float(T_width_Roll.value), float(T_length_Roll.value)), 1)
+                                           float(T_width_Roll.value), float(T_length_Roll.value)), 0)
     def  calc_T_cost():
-        T_result_cost_TextBox.value = round(T_calculation_length(float(T_result_TextBox.value),
+        T_result_cost_TextBox.value = round(T_calculation_cost(float(T_result_TextBox.value),
                                                              float(T_cost_Roll.value)), 1)
 
     def save():

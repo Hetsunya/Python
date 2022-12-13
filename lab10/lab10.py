@@ -93,7 +93,7 @@ def wallpaper():
         W_result_TextBox.value = round(calculation_quantity(float(length_Room.value), float(width_Room.value),
                                            float(height_Room.value), float(width_Roll.value), float(length_Roll.value)), 1)
     def  W_calc_cost():
-        result_cost_TextBox.value = round(calculation_quantity(float(W_result_TextBox.value), float(cost_Roll.value)), 1)
+        result_cost_TextBox.value = round(calculation_cost(float(W_result_TextBox.value), float(cost_Roll.value)), 1)
 
     def save():
         data_Save(W_result_TextBox.value, result_cost_TextBox.value)
@@ -142,7 +142,7 @@ def tile():
                                            float(T_width_Roll.value), float(T_length_Roll.value)), 1)
     def  calc_T_cost():
         T_result_cost_TextBox.value = round(T_calculation_length(float(T_result_TextBox.value),
-                                                             float(T_length_Roll.value)), 1)
+                                                             float(T_cost_Roll.value)), 1)
 
     def save():
         data_Save(0,0, T_result_TextBox.value, T_result_cost_TextBox.value)

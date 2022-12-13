@@ -43,4 +43,3 @@ distances ['Paris']['London'] = Paris_London
 
 print(distances)
 
-input('Нажмите Enter для выхода\n')

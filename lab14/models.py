@@ -6,7 +6,7 @@ engine = create_engine('sqlite:///./database.db')
 Base = declarative_base()
 
 association_table = Table("association_table", Base.metadata,
-                    # Column("discipline_id", ForeignKey("discipline.id")
+                    Column("discipline_id", ForeignKey("discipline.id")),
                     Column("pulpit_id", ForeignKey("pulpit.id")),
                     Column("type_of_control_id", ForeignKey("type_of_control.id")))
 
@@ -57,7 +57,7 @@ class Type_of_control(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String)
-    #discipline = relationship('Discipline', secondary=association_table, backref='discipline.name')
+    discipline_id = Column(String, ForeignKey("discipline.id"))
 
     # def  __init__(self, name: str):
     #     self.name = name

@@ -1,32 +1,69 @@
 #include <math.h>
 #include <stdio.h>
-void main()
+#include <stdlib.h>
+
+
+void fill(int m, int n, double *(array[n]))
 {
-int i,n,j;
-float a,b,mas[10][10];
-    printf("Введите n= ");
-    scanf("%d",&n);
-        for(i=0;i<n;i++) 
-{
-        for(j=0;j<n;j++) 
-{
-    printf("mas(%d %d)=",i,j);
-    scanf("%f",&mas[i][j]);
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i][j] = cos(sqrt(i)) - i + cos(j)/sqrt(1+j);
+            printf("%lf " , array[j][i]);
+        }
+        printf("\n");
+    }
 }
-}
-        for(j=0;j<n;j++)
-        for(i=0;i<j;i++)
+
+void adT(int m, int n, double *(array[n]))
 {
-a=mas[j][i];
-mas[j][i]=mas[i][j];
-mas[i][j]=a;
+    int a;
+    for(int j=0;j<m;j++)
+    {
+        for(int i=0;i<n;i++)
+        {
+            a=array[j][i];
+            array[j][i]=array[i][j];
+            array[i][j]=a;
+
+            printf("%lf " , array[j][i]);
+        }
+        printf("\n");
+    }
+
 }
-        for(i=0;i<n;i++) 
+
+double find_min(int m, int n, double *(array[n]))
 {
-        for(j=0;j<n;j++)
-    printf("%f\t",mas[i][j]);
-    printf("\n");
+  double res = 100;
+  for (int i = 0; i < m; i++)
+      for (int j = 0; j < n; j++)
+          if (fabs(array[i][j]) < sqrt(res))
+              res = fabs(array[i][j]);
+  return sqrt(res);
+
 }
-    scanf("%f",&mas[i][j]);
-    scanf("%f",&n);
+
+int main()
+{
+  int n, m;
+  printf("Enter count of rows: ");
+  scanf("%d", &m);
+  printf("Enter count of columns: ");
+  scanf("%d", &n);
+  double **array = (double **)malloc(sizeof(double *) * m);
+  if (!array)
+  {
+    printf("Memory allocation error!\n");
+    exit(EXIT_FAILURE);
+  }
+  for (int i = 0; i < m; i++)
+    array[i] = (double *)malloc(n * sizeof(double));
+
+  fill(m, n, array);
+  adT(m, n, array);
+  double res = find_min(m, n, array);
+  printf("%lf", res);
+  return 0;
 }

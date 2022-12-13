@@ -4,7 +4,7 @@ import simple_draw as sd
 def snow():
 
     n = 10
-    x_point = [sd.random_number(-50, 200) for _ in range(n)]
+    x_point = [sd.random_number(-50, 150) for _ in range(n)]
     y_point = [sd.random_number(0, 0) for _ in range(n)]
     length_list = [sd.random_number(10, 30) for _ in range(n)]
     factor_a_list = [sd.random_number(4, 7) / 10 for _ in range(n)]

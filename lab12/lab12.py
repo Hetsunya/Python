@@ -46,6 +46,7 @@ class Account:
             years += 1
         return years
 
+a = Account('John')
 
 class FreeChecking(Account):
     """A bank account that charges for withdrawals, but the first two are free!

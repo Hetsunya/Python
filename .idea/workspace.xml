@@ -5,32 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab11/simple_draw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab13/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/package/laminat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/package/save_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/package/tile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/package/wallpaper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/2/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/2/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/2/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/lab14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/lab15.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/lab15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/Tile result.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/08_garden.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/08_garden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/Result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/Result.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab10/lab10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/lab10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/laminat/calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/save_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/laminat/save_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/lab13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/laminat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/save_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/tile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/package/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/tile/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/tile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/tile/save_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/wallpaper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/save_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/save_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11/01_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/01_snowfall.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11/02_alchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/02_alchemy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.bak" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.dir" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.dir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab12/lab12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/lab12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/tests/wwpd-car.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/tests/wwpd-car.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab13/Python-Lab/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/Python-Lab/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab13/a.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab6/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/a.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/b.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.bak" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.dir" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.dir" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/01_shapes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/01_shapes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/02_global_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/02_global_color.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/03_shape_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/03_shape_select.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/04_fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/04_fractal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/05_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/05_snowfall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/rainbow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/smile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/packet_draw/snow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/packet_draw/snow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9/04_painting.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/04_painting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +68,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lab13/Python-Lab" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,127 +99,12 @@
       <recent name="B:\Задания\Python\lab10\package" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="B:\Задания\Python\lab10\package\wallpaper" />
+      <recent name="B:\Задания\Python\lab13" />
+      <recent name="B:\Задания\Python\lab14\3" />
+      <recent name="B:\Задания\Python\lab14\models" />
       <recent name="B:\Задания\Python\lab10\package" />
-      <recent name="B:\Задания\Python\lab8\practice" />
-      <recent name="B:\Задания\Python" />
+      <recent name="B:\Задания\Python\lab10\package\wallpaper" />
     </key>
-  </component>
-  <component name="RunManager" selected="Python.01_snowfall">
-    <configuration name="01_snowfall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab11" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab11/01_snowfall.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="05_snowfall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab8/05_snowfall.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lab10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/lab10.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testxls (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab10/testxls.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testxls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab10" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="B:\Задания\Python\lab10\testxls.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.01_snowfall" />
-        <item itemvalue="Python.05_snowfall" />
-        <item itemvalue="Python.lab10" />
-        <item itemvalue="Python.testxls (1)" />
-        <item itemvalue="Python.testxls" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

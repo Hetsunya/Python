@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
+class Wallpaper():
+    S_room = 0
+    room_length = 0
+    room_width = 0
+    room_height = 0
+    S_one_package = 0
+    package_length = 0
+    package_width = 0
+    cost_one_package = 0
+    Q = 0
 
-def  calculation_quantity(*args):
-    Wallpaper_strips_for_room = (args[0] / args[3]) + args[0] % args[3]#длину комнаты разделите на ширину обоев. Вы узнаете, сколько полос обоев понадобится для оклейки комнаты
-    Wallpaper_strips_from_roll =  (args[4] / args[2]) + args[4] % args[2]#длину рулона разделите на высоту комнаты. Вы узнаете, сколько полос получится из одного рулона;
-    return  Wallpaper_strips_for_room / Wallpaper_strips_from_roll
+    def  calc_S_room(self):
+        self.S_room = self.room_length * self.room_width * self.room_length
+        return self.S_room
 
-
-def  calculation_quantity(*args):
-    return  args[0] * args[1]
+    # def  calc_Q(self):
+    #     self.Q = self.S_room /
 

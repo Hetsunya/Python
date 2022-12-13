@@ -87,7 +87,7 @@ def pingpong(n):
         return 1
 
     return pingpong(n - 1) + ping(n - 1)
-    
+
     return pingpong(n - 1) + flag(n - 1)
 
 def missing_digits(n):
@@ -171,14 +171,15 @@ def count_coins(total):
     True
     """
     "*** YOUR CODE HERE ***"
-    def coins(n, exchange):
-        if n < 4:
-            return 1
-        elif (n < 0) or (exchange > n) or (exchange == None):
+    def count(coin, n):
+        if not coin:
             return 0
-        else:
-            return coins(n - next_largest_coin(exchange), exchange) + coins(n, next_largest_coin(exchange))
-    return coins(total, 1)
+        elif coin == n:
+            return 1
+        elif coin > n:
+            return 0
+        return count(coin, n - coin) + count(next_largest_coin(coin), n)
+    return count(1, total)
 
 from operator import sub, mul
 

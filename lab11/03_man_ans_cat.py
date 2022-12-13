@@ -26,171 +26,164 @@ from random import randint
 # Человеку и коту надо вместе прожить 365 дней.
 
 # TODO здесь ваш код
-class Cat:
-
-    def __init__(self, name):
-        self.name = name
-        self.fullness_cat = 50
-        self.house = None
-        self.man = None
-
-    def __str__(self):
-        return 'Я кот {}, сытость {}'.format(self.name, self.fullness_cat)
-
-    def go_into_the_house(self, house, man):
-        self.house = house
-        self.man = man
-        cprint('{} въехал в дом'.format(self.name), color='cyan')
-
-    def eat(self):
-        if self.house.food_cat >= 30:
-            cprint('{} поел'.format(self.name), color='green')
-            self.fullness_cat += 20
-            self.house.food_cat -= 10
-        else:
-            cprint('Нужно отправить хозяина за кормом, а пока подеру-ка я обои', color='blue')
-            self.fullness_cat -= 10
-            self.house.dirt += 5
-            Man.shopping(self.man)
-
-    def sleap(self):
-        cprint('{} спал весь день'.format(self.name), color='yellow')
-        self.fullness_cat -= 10
-
-    def tears_the_wallpaper(self):
-        cprint('{} подрал обои'.format(self.name), color='blue')
-        self.fullness_cat -= 10
-        self.house.dirt += 5
-
-    def act(self):
-        if self.fullness_cat <= 0:
-            cprint('{} умер'.format(self.name), color='red')
-            return
-        dice = randint(1, 6)
-        if self.fullness_cat <= 20:
-            self.eat()
-        elif dice == 1:
-            self.eat()
-        elif dice == 2:
-            self.tears_the_wallpaper()
-        else:
-            self.sleap()
-
-
-class House:
-
-    def __init__(self, home):
-        self.name = home
-        self.dirt = 0
-        self.food_man = 0
-
-    def __str__(self):
-        return 'В доме {}, осталось еды для кота {}, еды для человека {}, степень загрязненности {}'.format(
-            self.name, self.food_cat, self.food_man, self.dirt)
-
-    def dish(self):
-        self.food_cat = 0
-
 
 class Man:
 
     def __init__(self, name):
         self.name = name
-        self.money = 50
-        self.fullness_man = 50
+        self.fullness = 50
         self.house = None
-        self.cat = None
+        self.pets = []
 
-    def __str__(self):
-        return 'Я {}, сытость {}, деньги {}'.format(self.name, self.fullness_man, self.money)
-
-    def go_into_the_house(self, house):
-        self.house = house
-        print('{} въехал в дом'.format(self.name), color='cyan')
+    def __repr__(self):
+        return f'Я - {self.name}, сытость {self.fullness}'
 
     def eat(self):
-        if self.house.food_man >= 10:
-            print('{} поел'.format(self.name), color='green')
-            self.fullness_man += 20
-            self.house.food_man -= 10
+        if self.house.food >= 10:
+            print(f'{self.name} поел')
+            self.fullness += 20
+            self.house.food -= 10
         else:
-            print('Нужно сходить за едой в магазин', color='magenta')
-            self.shopping()
-
+            print(f'{self.name} нет еды')
     def work(self):
-        print('{} сходил на работу'.format(self.name), color='blue')
-        self.money += 150
+        print(f'{self.name} сходил на работу')
+        self.house.money += 150
+        self.fullness -= 10
+
+    def learn_python(self):
+        print(f'{self.name} учил Python целый день')
+        self.fullness -= 10
 
     def shopping(self):
-        if self.money < 50:
-            self.work()
+        if self.house.money >= 50:
+            print(f'{self.name} сходил в магазин за едой себе и котам')
+            self.house.money -= 50
+            self.house.food += 50
+            self.house.cats_food += 60
         else:
-            cprint('{} сходил в магазин'.format(self.name), color='magenta')
-            self.money -= 50
-            self.house.food_cat += 50
-            self.house.food_man += 30
+            print(f'{self.name} деньги кончились!')
 
-    def practice_python(self):
-        cprint('{} изучал питон весь день'.format(self.name), color='yellow')
-        self.fullness_man -= 10
-
-    def clean_up_the_house(self):
-        cprint('Очень грязно... {} прибрал {}'.format(self.name, self.house.name), color='magenta')
-        self.house.dirt -= 100
-        self.fullness_man -= 20
-
-    def pick_up_a_cat(self, cat, house):
-        self.cat = cat
+    def go_to_the_house(self, house):
         self.house = house
-        cprint('{} подобрал кота. Теперь у кота есть имя {}'.format(
-            self.name, self.cat.name), color='cyan')
+        self.fullness -= 10
+        print(f'{self.name} въехал в дом')
+
+    def take_cat(self, cat):
+        self.pets.append(cat)
+        cat.house = self.house
+        print(f'{self.name} подобрал кота {cat.name}')
+
+    def make_clean(self):
+        print(f'{self.name} убрался дома')
+        self.house.clean -= 80
+        self.fullness -= 20
 
     def act(self):
-        if self.fullness_man <= 0:
-            cprint('{} умер'.format(self.name), color='red')
+        if self.fullness <= 0:
+            print(f'{self.name} умер...')
+            return
+        dice = randint(1, 5)
+        if self.fullness <= 20:
+            self.eat()
+        elif self.house.food < 10:
+            self.shopping()
+        elif self.house.cats_food < 10:
+            self.shopping()
+        elif self.house.money < 50:
+            self.work()
+        elif self.house.clean > 80:
+            self.make_clean()
+        elif dice == 1:
+            self.work()
+        elif dice == 2:
+            self.eat()
+        else:
+            self.learn_python()
+
+
+class House:
+
+    def __init__(self):
+        self.food = 50
+        self.money = 100
+        self.cats_food = 0
+        self.clean = 0
+
+    def __repr__(self):
+        return f'В доме еды осталось {self.food}, в доме кошачьей еды осталось {self.cats_food}, денег осталось {self.money}, грязи в доме {self.clean}'
+
+
+class Cat:
+    def __init__(self, name):
+        self.name = name
+        self.fullness = 50
+        self.house = None
+
+    def __repr__(self):
+        return f'Кот - {self.name}, сытость {self.fullness}'
+
+    def eat(self):
+        if self.house.cats_food >= 10:
+            print(f'{self.name} поел')
+            self.fullness += 15
+            self.house.cats_food -= 10
+        else:
+            print(f'{self.name} нет еды')
+
+    def sleep(self):
+        print(f'{self.name} спал весь день')
+        self.fullness -= 10
+
+    def tear_the_wallpaper(self):
+        print(f'{self.name} подрал обои')
+        self.house.clean += 20
+        self.fullness -= 5
+
+    def go_to_the_house(self, house):
+        self.house = house
+        self.fullness -= 10
+        print(f'{self.name} теперь живет с Васей')
+
+    def act(self):
+        if self.fullness <= 0:
+            print(f'{self.name} умер...')
             return
         dice = randint(1, 6)
-        if self.fullness_man <= 20:
+        if self.fullness < 20:
             self.eat()
-        elif house.dirt >= 100:
-            self.clean_up_the_house()
         elif dice == 1:
-            self.eat()
+            self.tear_the_wallpaper()
         elif dice == 2:
-            self.work()
+            self.eat()
         else:
-            self.practice_python()
+            self.sleep()
 
-cats = [
-    Cat('Пушок'),
-    Cat('Васька'),
-    Cat('Борис')
-]
 
-house = House('Уютный дом')
-house.dish()
-maxim = Man('Максим')
-print(maxim)
-for cat in cats:
-    print(cat)
-print(house)
-maxim.go_into_the_house(house=house)
-for cat in cats:
-    maxim.pick_up_a_cat(cat=cat, house=house)
-    cat.go_into_the_house(house=house, man=maxim)
-
+my_sweet_home = House()
+vasya = Man(name='Вася')
+tom = Cat(name='Том')
+murzik = Cat(name='Мурзик')
+murka = Cat(name='Мурка')
+vasya.go_to_the_house(house=my_sweet_home)
+vasya.take_cat(tom)
+vasya.take_cat(murzik)
+vasya.take_cat(murka)
+tom.go_to_the_house(house=my_sweet_home)
+murzik.go_to_the_house(house=my_sweet_home)
+murka.go_to_the_house(house=my_sweet_home)
 
 for day in range(1, 366):
-    cprint('_______________ день {} _______________'.format(day), color='cyan')
-    for cat in cats:
-        cat.act()
-    maxim.act()
-    cprint('_______________ в конце дня _______________', color='cyan')
-    print(maxim)
-    for cat in cats:
-        print(cat)
-    print(house)
-
+    print(f'---------------------------------- день {day} ----------------------------------')
+    vasya.act()
+    tom.act()
+    murzik.act()
+    murka.act()
+    print(vasya)
+    print(tom)
+    print(murzik)
+    print(murka)
+    print('--- в конце дня ---')
+    print(my_sweet_home)
 # Усложненное задание (делать по желанию)
 # Создать несколько (2-3) котов и подселить их в дом к человеку.
 # Им всем вместе так же надо прожить 365 дней.

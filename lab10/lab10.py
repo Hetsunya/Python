@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from package.wallpaper.save_module import *
-from package.wallpaper.calculation import *
-from package.laminat.save_module import *
-from package.laminat.calculation import *
-from package.tile.save_module import *
-from package.tile.calculation import *
-
+from package.tile import *
+from package.wallpaper import *
+from package.laminat import *
+from package.save_module import *
 from guizero import *
 
 app = App("Lab10", layout="grid", height= 180, width=200)
 wallpaper_app = App(title="Обои", layout="grid", height= 321, width=314)
 tile_app = App("Плитка", layout="grid", height= 310, width=340)
 laminate_app = App("Ламинат", layout="grid", height= 290, width=340)
-
 wallpaper_app.hide()
 tile_app.hide()
 laminate_app.hide()
@@ -59,9 +55,9 @@ tile_Text = Text(app, text="Плитка", align="left", grid=[0, 2])
 tile_Button = PushButton(app, text="Начать расчет",
                               align="left", command=t, grid=[1,  2])
 
-tile_Text = Text(app, text="Ламинат", align="left", grid=[0, 3])
-tile_Button = PushButton(app, text="Начать расчет",
-                              align="left", command=l, grid=[1, 3 ])
+laminat_Text = Text(app, text="Ламинат", align="left", grid=[0, 3])
+laminat_Button = PushButton(app, text="Начать расчет",
+                              align="left", command=l, grid=[1, 3])
 
 # РАСЧЕТ ОБОЕВ
 def wallpaper():
@@ -149,7 +145,7 @@ def tile():
                                                              float(T_length_Roll.value)), 1)
 
     def save():
-        data_Save(T_result_TextBox.value, T_result_cost_TextBox.value)
+        data_Save(0,0, T_result_TextBox.value, T_result_cost_TextBox.value)
 
 
     T_result_Label = Text(tile_app, text="Количество плиток", grid=[0, 10])
@@ -193,7 +189,7 @@ def  laminat():
                                                      float(cost.value)), 1)
 
     def save():
-        L_data_Save(L_Result_TextBox.value, L_Result_cost_TextBox.value)
+        data_Save(0,0,0,0, L_Result_TextBox.value, L_Result_cost_TextBox.value)
 
     L_Result_Label = Text(laminate_app, text="Количество плиток", grid=[0, 6])
     L_Result_TextBox = TextBox(laminate_app, grid=[1, 6])

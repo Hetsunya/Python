@@ -10,9 +10,9 @@ void fill(int m, int n, double *(array[n]))
         for (int j = 0; j < n; j++)
         {
             array[i][j] = cos(sqrt(i)) - i + cos(j)/sqrt(1+j);
-            printf("%lf " , array[j][i]);
+            // printf("%lf " , array[j][i]);
         }
-        printf("\n");
+        // printf("\n");
     }
 }
 
@@ -27,9 +27,9 @@ void adT(int m, int n, double *(array[n]))
             array[j][i]=array[i][j];
             array[i][j]=a;
 
-            printf("%lf " , array[j][i]);
+            // printf("%lf " , array[j][i]);
         }
-        printf("\n");
+        // printf("\n");
     }
 
 }

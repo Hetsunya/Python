@@ -5,49 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab13/package/laminat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab13/package/save_module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab13/package/tile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab13/package/wallpaper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/2/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/2/database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/2/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/lab14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/lab15.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/lab15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab13/package/calc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/Task.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/src/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab14/src/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/Task.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/sqlite3.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/src/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14/Lab_14/src/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/08_garden.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/08_garden.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/Result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/Result.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/lab10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/lab10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/lab13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/laminat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/laminat/save_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/tile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/package/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/tile/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/tile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/tile/save_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/wallpaper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab10/package/wallpaper/save_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab10/package/save_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab11/01_snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/01_snowfall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab11/02_alchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/02_alchemy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.bak" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/.ok_storage.dir" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_storage.dir" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab12/lab12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/lab12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab13/Python-Lab" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/Python-Lab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab13/Python-Lab/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/Python-Lab/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/a.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.bak" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/.ok_storage.dir" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/.ok_storage.dir" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/04_painting.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/04_painting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab13/lab13.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/lab13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab13/package/laminat.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/package/laminat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab14/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/a.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/lab15.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/lab15.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/lab15.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/lab15.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +49,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lab13/Python-Lab" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,22 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/Задания/Python/lab11&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "B:/Задания/Python/lab14",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\Задания\Python\lab14" />
       <recent name="B:\Задания\Python\lab11" />
       <recent name="B:\Задания\Python\lab10\package\laminat" />
       <recent name="B:\Задания\Python\lab10\package\tile" />
       <recent name="B:\Задания\Python\lab10\package\wallpaper" />
-      <recent name="B:\Задания\Python\lab10\package" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="B:\Задания\Python\lab13" />

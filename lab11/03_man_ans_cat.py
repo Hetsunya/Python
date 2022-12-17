@@ -34,9 +34,10 @@ class Man:
         self.fullness = 50
         self.house = None
         self.pets = []
+        self.python_skills = False
 
     def __repr__(self):
-        return f'Я - {self.name}, сытость {self.fullness}'
+        return f'Человек - {self.name}, сытость {self.fullness}'
 
     def eat(self):
         if self.house.food >= 10:
@@ -47,16 +48,20 @@ class Man:
             print(f'{self.name} нет еды')
     def work(self):
         print(f'{self.name} сходил на работу')
-        self.house.money += 150
+        if self.python_skills == True:
+            self.house.money += 150
+        else:
+            self.house.money += 80
         self.fullness -= 10
 
     def learn_python(self):
         print(f'{self.name} учил Python целый день')
         self.fullness -= 10
+        self.python_skills = True
 
     def shopping(self):
         if self.house.money >= 50:
-            print(f'{self.name} сходил в магазин за едой себе и котам')
+            print(f'{self.name} сходил в магазин за едой')
             self.house.money -= 50
             self.house.food += 50
             self.house.cats_food += 60
@@ -161,6 +166,8 @@ class Cat:
 
 my_sweet_home = House()
 vasya = Man(name='Вася')
+vitalya = Man(name="Витлаля")
+nikita = Man(name="Никита")
 tom = Cat(name='Том')
 murzik = Cat(name='Мурзик')
 murka = Cat(name='Мурка')
@@ -168,22 +175,31 @@ vasya.go_to_the_house(house=my_sweet_home)
 vasya.take_cat(tom)
 vasya.take_cat(murzik)
 vasya.take_cat(murka)
+
+vitalya.go_to_the_house(house=my_sweet_home)
+nikita.go_to_the_house(house=my_sweet_home)
 tom.go_to_the_house(house=my_sweet_home)
 murzik.go_to_the_house(house=my_sweet_home)
 murka.go_to_the_house(house=my_sweet_home)
 
+from time import sleep
 for day in range(1, 366):
     print(f'---------------------------------- день {day} ----------------------------------')
     vasya.act()
+    vitalya.act()
+    nikita.act()
     tom.act()
     murzik.act()
     murka.act()
     print(vasya)
+    print(vitalya)
+    print(nikita)
     print(tom)
     print(murzik)
     print(murka)
     print('--- в конце дня ---')
     print(my_sweet_home)
+    sleep(0.1)
 # Усложненное задание (делать по желанию)
 # Создать несколько (2-3) котов и подселить их в дом к человеку.
 # Им всем вместе так же надо прожить 365 дней.

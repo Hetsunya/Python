@@ -13,5 +13,8 @@ class remont():
   [      _      , 'a label' , 'another label' ,        _       ],
   [HS('slider2'),    ___    ,       ___       ,        _       ]
 )
+    gui2 = Gui([G('my group')])
+
+    gui.mygroup = another_gui
 
     gui.run()

@@ -1,16 +1,17 @@
 import math
-
-print("Введите количество строк:")
+# import numpy as np
+print("Введите количество колон:")
 m = int(input())
-print("Введите количество коллон--->")
+print("Введите количество строк--->")
 n = int(input())
 
 # m = 10
 # n = 10
 
-array = [[round(math.cos(math.sqrt(i)) - i + math.cos(j)/math.sqrt(1+j), 2) for i in range(m)]
+array = [[round(math.cos(math.sqrt(i)) - i + math.cos(j)/math.sqrt(1+j), 3) for i in range(m)]
          for j in range(n)]
 
+print(array)
 # for i in range(m):
 #     for j in range(n):
 #         print(array[i][j], end=' ')
@@ -19,8 +20,9 @@ array = [[round(math.cos(math.sqrt(i)) - i + math.cos(j)/math.sqrt(1+j), 2) for 
 trans_array = [[array[i][j] for i in range(len(array))]
                for j in range(len(array[0]))]
 
-# print("ПОСЛЕ adT")
-#
+print("ПОСЛЕ adT")
+
+print(trans_array)
 # for i in range(m):
 #     for j in range(n):
 #         print(trans_array[i][j], end=' ')

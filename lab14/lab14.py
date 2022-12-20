@@ -1,35 +1,69 @@
-import models
-from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy import create_engine
 
-engine = create_engine('sqlite:///./database.db')
-session = Session(bind='sqlite:///./database.db')
+import src.database as db
 
+engine = create_engine('sqlite:///database.db')
+# db.session.configure(bind=engine)
+print(
+    """
+1. Добавить дисциплину
+2. Добавить кафедру
+3. Добавить вид контроля
+4. Показать все дисциплины
+5. Показать все кафедры
 
-def create_database(load_fake_data: bool = True):
-    if load_fake_data:
-        _load_fake_data()
+0. Выход
+"""
+)
+while True:
 
+    req = input("\nВыбор действия: ")
 
-def _load_fake_data(value):
-    disciplines_names = ['Математика', 'Программирование', 'Философствуем', 'Алгоритмы и структуры данных',
-                         'Линейная алгебра', 'Мат. статистика', 'Физкультура']
+    if req == "1":
+        name = input("  Название: ")
+        lecture = input("  Лекций: ")
+        practice = input("  Практики: ")
+        labs = input("  Лаб: ")
+        pulpit_id = input("  Кафедра:  ")
 
-    # pulpit1 = Pulpit(name='ASOIU')
-    pulpit = models.Pulpit(name=value['ASOIU'])
-    value.append(pulpit)
-    session.add(pulpit)
-    # pulpit2 = Pulpit(name='IVT')
-    # Session.add(pulpit1)
-    # Session.add(pulpit2)
-    #
-    # for d in disciplines_names:
-    #     Session.add(d)
+        db.add_discipline(name, lecture, practice, labs, pulpit_id)
 
-    # discipline_list = [pulpit1, pulpit2]
-    session.commit()
-    session.close()
+    elif req == "2":
+        name = input("  Название кафедры: ")
 
-# _load_fake_data()
-value = list()
-create_database(value)
+        db.add_pulpit(name)
+
+    elif req == "3":
+        ToC = input("  Наименование вида контроля: ")
+
+        db.add_type_of_control(ToC)
+
+    elif req == "4":
+        disciplines = db.all_disciplines()
+
+        if not disciplines:
+            print("  Пока пусто")
+
+        for id_discipline, data in disciplines.items():
+            print(f"  {id_discipline} ")
+            print(f"    Название: {data['name']}")
+            print(f"    Лекций: {data['lecture']}")
+            print(f"    Практики: {data['practice']}")
+            print(f"    Лабораторные: {data['labs']}")
+            print(f"    Кафедра: {data['pulpit_name']}")
+
+    elif req == "5":
+        pulpits = db.all_pulpit()
+
+        if not pulpits:
+            print("  Пока пусто")
+
+        for id_pulpit, data in pulpits.items():
+            print(f"  {id_pulpit}.  ")
+            print(f"  {data['name']}, Количество дисциплин: {data['count_disciplines']} ")
+
+    elif req == "0":
+        exit()
+
+    else:
+        print("Введена неверная команда")

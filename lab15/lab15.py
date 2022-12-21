@@ -4,12 +4,8 @@ m = int(input())
 print("Введите количество строк--->")
 n = int(input())
 
-# m = 10
-# n = 10
-
 array = [[round(math.cos(math.sqrt(i)) - i + math.cos(j)/math.sqrt(1+j), 3) for i in range(m)]
          for j in range(n)]
-
 
 # print(array)
 for i in range(len(array)):
@@ -35,7 +31,6 @@ for i in range(len(trans_array)):
 
 module_array = [[math.fabs(trans_array[i][j]) for i in range(len(trans_array))]
                 for j in range(len(trans_array[0]))]
-
 
 print("Модуль")
 prost_array = []

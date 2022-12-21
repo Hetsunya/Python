@@ -8,7 +8,7 @@ class Card:
 
     def __init__(self, name, attack, defense):
         """
-        Create a.py Card object with a.py name, attack,
+        Create a Card object with a name, attack,
         and defense.
         >>> staff_member = Card('staff', 400, 300)
         >>> staff_member.name
@@ -23,7 +23,7 @@ class Card:
         >>> other_staff.defense
         500
         """
-        "*** YOUR CODE HERE ***"
+
         self.name = name
         self.attack = attack
         self.defense = defense
@@ -44,7 +44,7 @@ class Card:
         >>> third_card.power(staff_member)
         -100
         """
-        "*** YOUR CODE HERE ***"
+
         return self.attack - opponent_card.defense
 
     def effect(self, opponent_card, player, opponent):
@@ -55,24 +55,24 @@ class Card:
 
     def __repr__(self):
         """
-        Returns a.py string which is a.py readable version of
-        a.py card, in the form:
+        Returns a string which is a readable version of
+        a card, in the form:
         <cardname>: <cardtype>, [<attack>, <defense>]
         """
         return '{}: {}, [{}, {}]'.format(self.name, self.cardtype, self.attack, self.defense)
 
     def copy(self):
         """
-        Returns a.py copy of this card.
+        Returns a copy of this card.
         """
         return Card(self.name, self.attack, self.defense)
 
 
 class Player:
     def __init__(self, deck, name):
-        """Initialize a.py Player object.
+        """Initialize a Player object.
         A Player starts the game by drawing 5 cards from their deck. Each turn,
-        a.py Player draws another card from the deck and chooses one to play.
+        a Player draws another card from the deck and chooses one to play.
         >>> test_card = Card('test', 100, 100)
         >>> test_deck = Deck([test_card.copy() for _ in range(6)])
         >>> test_player = Player(test_deck, 'tester')
@@ -83,11 +83,11 @@ class Player:
         """
         self.deck = deck
         self.name = name
-        "*** YOUR CODE HERE ***"
-        self.hand = [self.deck.draw() for i in range(5)]
+
+        self.hand = [deck.draw() for _ in range(5)]
 
     def draw(self):
-        """Draw a.py card from the player's deck and add it to their hand.
+        """Draw a card from the player's deck and add it to their hand.
         >>> test_card = Card('test', 100, 100)
         >>> test_deck = Deck([test_card.copy() for _ in range(6)])
         >>> test_player = Player(test_deck, 'tester')
@@ -98,11 +98,11 @@ class Player:
         6
         """
         assert not self.deck.is_empty(), 'Deck is empty!'
-        "*** YOUR CODE HERE ***"
+
         self.hand.append(self.deck.draw())
 
     def play(self, index):
-        """Remove and return a.py card from the player's hand at the given INDEX.
+        """Remove and return a card from the player's hand at the given INDEX.
         >>> from cards import *
         >>> test_player = Player(standard_deck, 'tester')
         >>> ta1, ta2 = TACard("ta_1", 300, 400), TACard("ta_2", 500, 600)
@@ -115,7 +115,7 @@ class Player:
         >>> len(test_player.hand)
         2
         """
-        "*** YOUR CODE HERE ***"
+
         return self.hand.pop(index)
 
     def display_hand(self):
@@ -129,7 +129,7 @@ class Player:
 
     def play_random(self):
         """
-        Play a.py random card from hand.
+        Play a random card from hand.
         """
         return self.play(random.randrange(len(self.hand)))
 
@@ -147,7 +147,6 @@ class AICard(Card):
         Once you have finished writing your code for this problem,
         set implemented to True so that the text is printed when
         playing an AICard.
-
         >>> from cards import *
         >>> player1, player2 = Player(standard_deck.copy(), 'p1'), Player(standard_deck.copy(), 'p2')
         >>> opponent_card = Card("other", 500, 500)
@@ -162,17 +161,15 @@ class AICard(Card):
         True
         """
         "*** YOUR CODE HERE ***"
-        implemented = False
-        # You should add your implementation above this.
+        implemented = True
+        player.hand.append(player.deck.cards.pop())
+        player.hand.append(player.deck.cards.pop())
         if implemented:
             print(f"{self.name} allows me to draw two cards!")
 
-        for i in range(2):
-            player.draw()
-
     def copy(self):
         """
-        Create a.py copy of this card.
+        Create a copy of this card.
         """
         return AICard(self.name, self.attack, self.defense)
 
@@ -182,47 +179,47 @@ class TutorCard(Card):
 
     def effect(self, opponent_card, player, opponent):
         """
-        Add a.py copy of the first card in your hand
+        Add a copy of the first card in your hand
         to your hand, at the cost of losing the current
         round. If there are no cards in hand, this card does
         not add any cards, but still loses the round.  To
-        implement the second part of this effect, a.py Tutor
+        implement the second part of this effect, a Tutor
         card's power should be less than all non-Tutor cards.
-
         >>> from cards import *
         >>> player1, player2 = Player(standard_deck.copy(), 'p1'), Player(standard_deck.copy(), 'p2')
         >>> opponent_card = Card("other", 500, 500)
         >>> test_card = TutorCard("Tutor Card", 10000, 10000)
         >>> player1.hand = [Card("card1", 0, 100), Card("card2", 100, 0)]
         >>> test_card.effect(opponent_card, player1, player2)
-        Tutor Card allows me to add a.py copy of a.py card to my hand!
+        Tutor Card allows me to add a copy of a card to my hand!
         >>> print(player1.hand)
         [card1: Staff, [0, 100], card2: Staff, [100, 0], card1: Staff, [0, 100]]
-        >>> player1.hand[0] is player1.hand[2] # must add a.py copy!
+        >>> player1.hand[0] is player1.hand[2] # must add a copy!
         False
         >>> player1.hand = []
         >>> test_card.effect(opponent_card, player1, player2)
-        >>> print(player1.hand) # must not add a.py card if not available
+        >>> print(player1.hand) # must not add a card if not available
         []
         >>> test_card.power(opponent_card) < opponent_card.power(test_card)
         True
         """
-        "*** YOUR CODE HERE ***"
+
         added = False
-        if len(player.hand) > 0:
-            added = True
+        length = len(player.hand)
+        if length:
             player.hand.append(player.hand[0].copy())
+            added = not added
+        else:
+            self.attack = -1
+            self.defense = -1
         # You should add your implementation above this.
         if added:
-            print(f"{self.name} allows me to add a.py copy of a.py card to my hand!")
+            print(f"{self.name} allows me to add a copy of a card to my hand!")
 
-    "*** YOUR CODE HERE ***"
-    def power(self, opponent_card):
-            return -float('inf')
 
     def copy(self):
         """
-        Create a.py copy of this card.
+        Create a copy of this card.
         """
         return TutorCard(self.name, self.attack, self.defense)
 
@@ -235,7 +232,6 @@ class TACard(Card):
         Discard the card with the highest `power` in your hand,
         and add the discarded card's attack and defense
         to this card's own respective stats.
-
         >>> from cards import *
         >>> player1, player2 = Player(standard_deck.copy(), 'p1'), Player(standard_deck.copy(), 'p2')
         >>> opponent_card = Card("other", 500, 500)
@@ -252,21 +248,28 @@ class TACard(Card):
         >>> print(test_card.attack, test_card.defense)
         600 500
         """
-        "*** YOUR CODE HERE ***"
+
+        if not len(player.hand):
+            return
         best_card = None
-        if self.power(opponent_card) > opponent_card.power(self):
-            if self.attack >= 0 and self.defense >= 0:
-                best_card = True
-                player.hand.append(self)
-        self.attack -= 1000
-        self.defense -= 1000
+        max_power = -1000000
+        for card in player.hand:
+            if card.cardtype == 'Staff':
+                power = card.power(opponent_card)
+                if power > max_power:
+                    max_power = power
+                    best_card = card
+        if best_card in player.hand:
+            player.hand.remove(best_card)
+            self.attack += best_card.attack
+            self.defense += best_card.defense
         # You should add your implementation above this.
         if best_card:
-            print(f"{self.name} discards {best_card} from my hand to increase its own power!")
+            print(f"{self.name} discards {best_card.name} from my hand to increase its own power!")
 
     def copy(self):
         """
-        Create a.py copy of this card.
+        Create a copy of this card.
         """
         return TACard(self.name, self.attack, self.defense)
 
@@ -276,11 +279,10 @@ class InstructorCard(Card):
 
     def effect(self, opponent_card, player, opponent, arg=None):
         """
-        Survives multiple rounds, as long as it has a.py non-negative
-        attack or defense at the end of a.py round. At the beginning of the round,
+        Survives multiple rounds, as long as it has a non-negative
+        attack or defense at the end of a round. At the beginning of the round,
         its attack and defense are permanently reduced by 1000 each.
         If this card would survive, it is added back to the hand.
-
         >>> from cards import *
         >>> player1, player2 = Player(standard_deck.copy(), 'p1'), Player(standard_deck.copy(), 'p2')
         >>> opponent_card = Card("other", 500, 500)
@@ -297,14 +299,16 @@ class InstructorCard(Card):
         >>> print(test_card.attack, test_card.defense)
         -1000 -1000
         """
-        "*** YOUR CODE HERE ***"
+
         re_add = False
-        if self.power(opponent_card) > opponent_card.power(self):
-            if self.attack >= 0 and self.defense >= 0:
-                re_add = True
-                player.hand.append(self)
-        self.attack -= 1000
         self.defense -= 1000
+        self.attack -= 1000
+        if self.attack >= 0 or self.defense >= 0:
+            re_add = not re_add
+            player.hand.append(self)
+        else:
+            if self in player.hand:
+                player.hand.remove(self)
         # You should add your implementation above this.
         if re_add:
             print(f"{self.name} returns to my hand!")
@@ -320,16 +324,16 @@ class InstructorCard(Card):
 class Deck:
     def __init__(self, cards):
         """
-        With a.py list of cards as input, create a.py deck.
+        With a list of cards as input, create a deck.
         This deck should keep track of the cards it contains, and
-        we should be able to draw from the deck, taking a.py random
+        we should be able to draw from the deck, taking a random
         card out of it.
         """
         self.cards = cards
 
     def draw(self):
         """
-        Pick a.py random card from the deck and remove it from the deck.
+        Pick a random card from the deck and remove it from the deck.
         """
         assert self.cards, 'The deck is empty!'
         rand_index = random.randrange(len(self.cards))
@@ -340,7 +344,7 @@ class Deck:
 
     def copy(self):
         """
-        Create a.py copy of this deck.
+        Create a copy of this deck.
         """
         return Deck([card.copy() for card in self.cards])
 
@@ -350,7 +354,7 @@ class Game:
 
     def __init__(self, player1, player2):
         """
-        Initialize a.py game of Magic: the Lambda-ing.
+        Initialize a game of Magic: the Lambda-ing.
         """
         self.player1, self.player2 = player1, player2
         self.p1_score = 0
@@ -358,7 +362,7 @@ class Game:
 
     def play_round(self, p1_card, p2_card):
         """
-        After each player picks a.py card, play them against
+        After each player picks a card, play them against
         each other.
         """
         p1_card.effect(p2_card, self.player1, self.player2)
@@ -374,7 +378,7 @@ class Game:
             self.p2_score += 1
             result = 'lost'
         else:
-            # This round is a.py draw.
+            # This round is a draw.
             result = 'tied'
         # Display results to user.
         print('You {} this round!'.format(result))

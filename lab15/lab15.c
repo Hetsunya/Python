@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-void fill(int m, int n, double *(array[n]))
+double fill(int m, int n, double *(array[n]))
 {
     for (int i = 0; i < m; i++)
     {
@@ -16,16 +16,13 @@ void fill(int m, int n, double *(array[n]))
     }
 }
 
-void adT(int m, int n, double *(array[n]))
+double adT(int m, int n, double *(array[n]))
 {
     int a;
     for(int j=0;j<m;j++)
     {
         for(int i=0;i<n;i++)
         {
-    //        prom:=mas[i,j];
-    //  mas[i,j]:=mas[l-j+1,l-i+1];
-    //  mas[l-j+1,l-i+1]:=prom;
             a=array[j][i];
             array[j][i]=array[i][j];
             array[i][j]=a;
@@ -35,6 +32,18 @@ void adT(int m, int n, double *(array[n]))
         printf("\n");
     }
 
+}
+
+double res(int m, int n, double array[n][m], double trans_arr[m][n])
+{
+  double res_arr[m][n];
+  for(int i = 0; i < m; i++)
+      for(int j = 0; j < n; j++)
+      {
+          res_arr[i][j] = 0;
+          for(int k = 0; k < n; k++)
+              res_arr[i][j] += array[i][k] * trans_arr[k][j];
+      }
 }
 
 double find_min(int m, int n, double *(array[n]))
@@ -63,8 +72,13 @@ int main()
   for (int i = 0; i < m; i++)
     array[i] = (double *)malloc(n * sizeof(double));
 
-  fill(m, n, array);
-  adT(m, n, array);
+  double original_array[m][n];
+  fill(m, n, original_array);
+
+  double trans_arr[n][m];
+  adT(m, n, trans_arr);
+  
+  res(m, n, original_array, trans_arr);
   double res = find_min(m, n, array);
   printf("%lf", res);
   return 0;

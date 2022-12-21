@@ -3,7 +3,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, backref, Session
 
 Base = declarative_base()
-engine = create_engine('sqlite:///database.db')
 
 class Discipline(Base):
     __tablename__ = "discipline"

@@ -6,9 +6,6 @@ from . import models
 engine = create_engine('sqlite:///database.db')
 session = Session(bind=engine)
 
-
-# https://qna.habr.com/q/234261
-
 def add_type_of_control(name):
     name_toc = session.query(models.Type_of_control).filter(models.Type_of_control.name == name)
 

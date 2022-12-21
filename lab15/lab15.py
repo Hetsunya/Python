@@ -1,5 +1,4 @@
 import math
-# import numpy as np
 print("Введите количество колон:")
 m = int(input())
 print("Введите количество строк--->")
@@ -11,15 +10,14 @@ n = int(input())
 array = [[round(math.cos(math.sqrt(i)) - i + math.cos(j)/math.sqrt(1+j), 3) for i in range(m)]
          for j in range(n)]
 
+
 print(array)
 # for i in range(m):
 #     for j in range(n):
 #         print(array[i][j], end=' ')
 #     print()
-
 trans_array = [[array[i][j] for i in range(len(array))]
-               for j in range(len(array[0]))]
-
+             for j in range(len(array[0]))]
 print("ПОСЛЕ adT")
 
 print(trans_array)
@@ -28,24 +26,26 @@ print(trans_array)
 #         print(trans_array[i][j], end=' ')
 #     print()
 
-# module_array = [[math.fabs(trans_array[i][j]) for i in range(len(trans_array))]
-#                 for j in range(len(trans_array[0]))]
+module_array = [[math.fabs(trans_array[i][j]) for i in range(len(trans_array))]
+                for j in range(len(trans_array[0]))]
 
-# print("Модуль")
-#
+print("Модуль")
+# print(math.fabs(trans_array))
+
 # for i in range(m):
 #     for j in range(n):
 #         print(math.fabs(trans_array[i][j]), end=' ')
-#     print()
-# # НИЖЕ ТОЖЕ САМОЕ НО С NumPy
+    # print()
+# НИЖЕ ТОЖЕ САМОЕ НО С NumPy
 # import numpy as np
 # module_array = np.fabs(trans_array)
-# print(module_array)
 
 prost_array = []
 for i in range(len(trans_array)):
     for j in range(len(trans_array[0])):
         prost_array.append(math.fabs(trans_array[i][j]))
+        print(math.fabs(trans_array[i][j]), end=' ')
+    print()
 
 print('САМЫЙ самый минимальный член: ', min(prost_array))
 

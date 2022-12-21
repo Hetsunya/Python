@@ -23,13 +23,16 @@ void adT(int m, int n, double *(array[n]))
     {
         for(int i=0;i<n;i++)
         {
+    //        prom:=mas[i,j];
+    //  mas[i,j]:=mas[l-j+1,l-i+1];
+    //  mas[l-j+1,l-i+1]:=prom;
             a=array[j][i];
             array[j][i]=array[i][j];
             array[i][j]=a;
 
-            // printf("%lf " , array[j][i]);
+            printf("%lf " , array[j][i]);
         }
-        // printf("\n");
+        printf("\n");
     }
 
 }
@@ -42,7 +45,6 @@ double find_min(int m, int n, double *(array[n]))
           if (fabs(array[i][j]) < sqrt(res))
               res = fabs(array[i][j]);
   return sqrt(res);
-
 }
 
 int main()

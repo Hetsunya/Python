@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="хз">
-      <change afterPath="$PROJECT_DIR$/lab14/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/src/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab14/src/models.py" afterDir="false" />
+    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="\">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab14/Lab_14/sqlite3.db" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/Lab_14/sqlite3.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab11/02_alchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/02_alchemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab11/03_man_ans_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/.ok_history" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/.ok_history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab12/lab12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab12/lab12.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab14/database.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab14/lab14.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/lab14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab14/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/src/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab14/src/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab14/src/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671349589335</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="\">
+      <created>1671501907718</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671501907718</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="хз" />
-    <option name="LAST_COMMIT_MESSAGE" value="хз" />
+    <MESSAGE value="\" />
+    <option name="LAST_COMMIT_MESSAGE" value="\" />
   </component>
 </project>

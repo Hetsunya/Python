@@ -5,15 +5,6 @@ from sqlalchemy.orm import relationship, backref, Session
 Base = declarative_base()
 engine = create_engine('sqlite:///database.db')
 
-
-association_table = Table(
-    'association_table', Base.metadata,
-    Column("discipline_id", Integer(), ForeignKey("discipline.id")),
-    Column("pulpit_id", Integer(), ForeignKey("pulpit.id")),
-    Column("type_of_control_id", Integer(), ForeignKey("type_of_control.id"))
-)
-
-
 class Discipline(Base):
     __tablename__ = "discipline"
 
@@ -43,5 +34,3 @@ class Type_of_control(Base):
     name = Column(String(15))
 
     disciplines = relationship('Discipline', backref='type_of_control')
-
-Base.metadata.create_all(bind=engine)

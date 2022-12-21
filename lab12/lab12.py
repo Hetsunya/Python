@@ -1,19 +1,19 @@
 class Account:
     """An account has a.py balance and a.py holder.
-    >>> a.py = Account('John')
-    >>> a.py.deposit(10)
+    >>> a = Account('John')
+    >>> a.deposit(10)
     10
-    >>> a.py.balance
+    >>> a.balance
     10
-    >>> a.py.interest
+    >>> a.interest
     0.02
-    >>> a.py.time_to_retire(10.25) # 10 -> 10.2 -> 10.404
+    >>> a.time_to_retire(10.25) # 10 -> 10.2 -> 10.404
     2
-    >>> a.py.balance               # balance should not change
+    >>> a.balance               # balance should not change
     10
-    >>> a.py.time_to_retire(11)    # 10 -> 10.2 -> ... -> 11.040808032
+    >>> a.time_to_retire(11)    # 10 -> 10.2 -> ... -> 11.040808032
     5
-    >>> a.py.time_to_retire(100)
+    >>> a.time_to_retire(100)
     117
     """
     max_withdrawal = 10
@@ -45,8 +45,6 @@ class Account:
             assumed_balance += assumed_balance * self.interest
             years += 1
         return years
-
-a = Account('John')
 
 class FreeChecking(Account):
     """A bank account that charges for withdrawals, but the first two are free!

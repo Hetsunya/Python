@@ -45,7 +45,8 @@ class Man:
             self.fullness += 20
             self.house.food -= 10
         else:
-            print(f'{self.name} нет еды')
+            print(f'{self.name} нет еды, следовательно пошел на работу ')
+            self.shopping()
     def work(self):
         print(f'{self.name} сходил на работу')
         if self.python_skills == True:
@@ -64,9 +65,10 @@ class Man:
             print(f'{self.name} сходил в магазин за едой')
             self.house.money -= 50
             self.house.food += 50
-            self.house.cats_food += 60
+            self.house.cats_food += 50
         else:
             print(f'{self.name} деньги кончились!')
+            self.work()
 
     def go_to_the_house(self, house):
         self.house = house
@@ -81,6 +83,11 @@ class Man:
     def make_clean(self):
         print(f'{self.name} убрался дома')
         self.house.clean -= 80
+        self.fullness -= 20
+
+    def play(self):
+        print(f'{self.name} играл весь день')
+        self.house.clean += 20
         self.fullness -= 20
 
     def act(self):
@@ -103,14 +110,14 @@ class Man:
         elif dice == 2:
             self.eat()
         else:
-            self.learn_python()
+            self.play()
 
 
 class House:
 
     def __init__(self):
         self.food = 50
-        self.money = 100
+        self.money = 0
         self.cats_food = 0
         self.clean = 0
 
@@ -128,12 +135,12 @@ class Cat:
         return f'Кот - {self.name}, сытость {self.fullness}'
 
     def eat(self):
-        if self.house.cats_food >= 10:
+        if self.house.cats_food >= 15:
             print(f'{self.name} поел')
             self.fullness += 15
-            self.house.cats_food -= 10
+            self.house.cats_food -= 15
         else:
-            print(f'{self.name} нет еды')
+            print(f'{self.name} нет еды, следовательно...')
 
     def sleep(self):
         print(f'{self.name} спал весь день')
@@ -165,16 +172,16 @@ class Cat:
 
 
 my_sweet_home = House()
-vasya = Man(name='Вася')
-vitalya = Man(name="Витлаля")
+dima = Man(name='Дима')
+vitalya = Man(name="Виталя")
 nikita = Man(name="Никита")
 tom = Cat(name='Том')
 murzik = Cat(name='Мурзик')
 murka = Cat(name='Мурка')
-vasya.go_to_the_house(house=my_sweet_home)
-vasya.take_cat(tom)
-vasya.take_cat(murzik)
-vasya.take_cat(murka)
+dima.go_to_the_house(house=my_sweet_home)
+dima.take_cat(tom)
+dima.take_cat(murzik)
+dima.take_cat(murka)
 
 vitalya.go_to_the_house(house=my_sweet_home)
 nikita.go_to_the_house(house=my_sweet_home)
@@ -185,13 +192,13 @@ murka.go_to_the_house(house=my_sweet_home)
 from time import sleep
 for day in range(1, 366):
     print(f'---------------------------------- день {day} ----------------------------------')
-    vasya.act()
+    dima.act()
     vitalya.act()
     nikita.act()
     tom.act()
     murzik.act()
     murka.act()
-    print(vasya)
+    print(dima)
     print(vitalya)
     print(nikita)
     print(tom)
@@ -199,7 +206,7 @@ for day in range(1, 366):
     print(murka)
     print('--- в конце дня ---')
     print(my_sweet_home)
-    sleep(0.1)
+    # sleep(0.7)
 # Усложненное задание (делать по желанию)
 # Создать несколько (2-3) котов и подселить их в дом к человеку.
 # Им всем вместе так же надо прожить 365 дней.

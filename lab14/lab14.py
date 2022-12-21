@@ -25,8 +25,9 @@ while True:
         practice = input("  Практики: ")
         labs = input("  Лаб: ")
         pulpit_id = input("  Кафедра:  ")
+        toc_id = input("  Наименование вида контроля:  ")
 
-        db.add_discipline(name, lecture, practice, labs, pulpit_id)
+        db.add_discipline(name, lecture, practice, labs, pulpit_id, toc_id)
 
     elif req == "2":
         name = input("  Название кафедры: ")
@@ -51,6 +52,7 @@ while True:
             print(f"    Практики: {data['practice']}")
             print(f"    Лабораторные: {data['labs']}")
             print(f"    Кафедра: {data['pulpit_name']}")
+            print(f"    Вид контроля: {data['type_name']}")
 
     elif req == "5":
         pulpits = db.all_pulpit()

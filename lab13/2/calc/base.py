@@ -6,7 +6,7 @@ class BaseClass(ABC):
 
     @abstractmethod
     def calc_S_one(self):
-        self.
+        pass
 
     @abstractmethod
     def calculation_quantity(self):

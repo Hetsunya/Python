@@ -1,7 +1,6 @@
 from math import ceil
 from . import base
 
-
 class Tile(base.BaseClass):
     length_Area = 0
     width_Area = 0

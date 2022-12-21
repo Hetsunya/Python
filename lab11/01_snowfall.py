@@ -11,8 +11,8 @@ sd.resolution = (900, 800)
 class Snowflake:
     # TODO здесь ваш код
      def __init__(self):
-         self.point = sd.get_point(sd.random_number(0, 900), sd.random_number(890, 1220))
-         self.length = sd.random_number(25, 60)
+         self.point = sd.get_point(sd.random_number(0, 900), sd.random_number(890, 1520))
+         self.length = sd.random_number(25, 40)
          self.f_a = sd.random_number(1, 8)/10
          self.f_b = sd.random_number(1, 7)/10
          self.f_c = sd.random_number(35, 65)
@@ -49,7 +49,7 @@ flake = Snowflake()
 #         break
 
 
-N = 20
+N = 60
 
 # шаг 2: создать снегопад - список объектов Снежинка в отдельном списке, обработку примерно так:
 # flakes = get_flakes(count=N)  # создать список снежинок
@@ -92,9 +92,9 @@ while True:
         flake.clear_previous_picture()
         flake.move()
         flake.draw()
-    fallen_flakes = get_fallen_flakes()  # подчитать сколько снежинок уже упало
+    fallen_flakes = get_fallen_flakes()
     if fallen_flakes:
-        append_flakes(count=fallen_flakes)  # добавить еще сверху
+        append_flakes(count=fallen_flakes)
     sd.sleep(0.1)
     if sd.user_want_exit():
         break

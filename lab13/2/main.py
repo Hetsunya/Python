@@ -1,4 +1,6 @@
-from classes import *
+from calc.laminat import *
+from calc.wallpaper import Wallpaper as wp
+from calc.tile import *
 from guietta import Gui, _, Quit
 
 gui = Gui(  
@@ -14,10 +16,10 @@ def rasrulwp(guiwp, *args):
     height_Room = guiwp.vwp
     width_Roll = guiwp.shrul
     length_Roll = guiwp.drul
-    guiwp.kolrul = round(Calculation_Wallpaper.calculation_quantity(float(length_Room), float(width_Room), float(height_Room), float(width_Roll), float(length_Roll)), 1)
+    guiwp.kolrul = round(wp.calculation_quantity(float(length_Room), float(width_Room), float(height_Room), float(width_Roll), float(length_Roll)), 1)
 def rastswp(guiwp, *args):
     cost_Roll = guiwp.tsrul
-    guiwp.tsenawp = round(Calculation_Wallpaper.calculation_cost(float(guiwp.kolrul), float(cost_Roll)), 1)
+    guiwp.tsenawp = round(wp.calc_cost(float(guiwp.kolrul), float(cost_Roll)), 1)
 def closewp(guiwp, *args):
     guiwp.close()
 def savewp(guiwp, *args):

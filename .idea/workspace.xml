@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="/">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vital.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/test.py" afterDir="false" />
+    <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="gigi">
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/Python. Лабораторная работа №15.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/steps.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_4_lib_c.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/calc/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/calc/classes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/calc/laminat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/calc/tile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/calc/wallpaper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/2/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/lab13.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab13/lab13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/calc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/laminat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/save_module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/tile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab13/package/wallpaper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab14/2/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab14/2/database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab14/2/models.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab15/lab15.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/lab15.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671588950667</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gigi">
+      <created>1673251734667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673251734667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +137,7 @@
     <MESSAGE value="хз" />
     <MESSAGE value="\" />
     <MESSAGE value="/" />
-    <option name="LAST_COMMIT_MESSAGE" value="/" />
+    <MESSAGE value="gigi" />
+    <option name="LAST_COMMIT_MESSAGE" value="gigi" />
   </component>
 </project>

@@ -35,10 +35,10 @@ print("Модуль")
 module_array = [[math.fabs(trans_array[i][j]) for i in range(len(trans_array))]
                 for j in range(len(trans_array[0]))]
 prost_array = []
-for i in range(len(module_array)):
-    for j in range(len(module_array[0])):
-        print(module_array[i][j], end=' ')
-    print()
+# for i in range(len(module_array)):
+#     for j in range(len(module_array[0])):
+#         print(module_array[i][j], end=' ')
+#     print()
 
 umn_arr = []
 print("*")

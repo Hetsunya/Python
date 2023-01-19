@@ -7,7 +7,7 @@ time ./task
 echo "Чистый си"
 echo " "
 time ./task_1.bin
-echo "nuitka"
+echo "Nuitka"
 echo " "
 time python3 task_4.py
 echo "So"

@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="gigi">
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/Python. Лабораторная работа №15.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/steps.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab15/Lab_15/task_4_lib_c.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_exam.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/doctest_testxd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/plus_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab15/lab15.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/lab15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +63,11 @@
       <recent name="B:\Задания\Python\lab10\package\wallpaper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Задания\Python\test" />
       <recent name="B:\Задания\Python\lab13\Python-Lab" />
       <recent name="B:\Задания\Python\lab13" />
       <recent name="B:\Задания\Python\lab14\3" />
       <recent name="B:\Задания\Python\lab14\models" />
-      <recent name="B:\Задания\Python\lab10\package" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -118,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673251734667</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gigi">
+      <created>1673595707660</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673595707660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,6 +1,6 @@
 CC=gcc
 CCACHE_DIR=/home/hetsu/.cache/Nuitka/ccache
-CCACHE_LOGFILE=/home/hetsu/Рабочий стол/Python/lab15/Lab_15/task_1.build/ccache-2356.txt
+CCACHE_LOGFILE=/home/hetsu/Рабочий стол/Python/lab15/Lab_15/task_1.build/ccache-6700.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_CONSTANTS_FROM_INCBIN', '_NUITKA_FROZEN=0', '_NUITKA_EXE']

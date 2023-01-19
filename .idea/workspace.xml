@@ -5,12 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1ad7646-ce85-4948-9dcd-d0dc45b067ab" name="Changes" comment="gigi">
-      <change afterPath="$PROJECT_DIR$/python_exam.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/doctest_testxd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/plus_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledCellType.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledFunctionType.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledGeneratorType.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/InspectPatcher.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/MainProgram.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.const" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants_data.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__helpers.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__loader.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/c_shared_lib.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/module.__main__.const" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/module.__main__.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/task" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/task_1.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023__19_25__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab15/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/1" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/c_shared_lib.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/steps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/steps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.bin" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__constants.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__constants.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__constants_data.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__constants_data.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__helpers.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__helpers.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__loader.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/__loader.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/module.__main__.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/module.__main__.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/scons-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/scons-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledCellType.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledCellType.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledCellType.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledCellType.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledFunctionType.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledFunctionType.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledFunctionType.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledFunctionType.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledGeneratorType.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledGeneratorType.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledGeneratorType.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/CompiledGeneratorType.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/InspectPatcher.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/InspectPatcher.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/InspectPatcher.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/InspectPatcher.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/MainProgram.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/MainProgram.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/MainProgram.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab15/Lab_15/task_1.build/static_src/MainProgram.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +102,11 @@
       <recent name="B:\Задания\Python\lab10\package\wallpaper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="B:\Задания\Python\test" />
       <recent name="B:\Задания\Python\lab13\Python-Lab" />
       <recent name="B:\Задания\Python\lab13" />
       <recent name="B:\Задания\Python\lab14\3" />
       <recent name="B:\Задания\Python\lab14\models" />
+      <recent name="B:\Задания\Python\lab10\package" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -114,14 +153,7 @@
       <option name="project" value="LOCAL" />
       <updated>1673251734667</updated>
     </task>
-    <task id="LOCAL-00006" summary="gigi">
-      <created>1673595707660</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1673595707660</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

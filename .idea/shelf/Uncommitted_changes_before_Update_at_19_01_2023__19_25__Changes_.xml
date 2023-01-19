@@ -1,0 +1,89 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]" date="1674138338793" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19.01.2023, 19:25 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/static_src/CompiledGeneratorType.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledGeneratorType.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/static_src/CompiledCellType.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledCellType.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/module.__main__.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/module.__main__.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/task" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/static_src/MainProgram.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/MainProgram.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/static_src/CompiledFunctionType.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/CompiledFunctionType.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__constants_data.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants_data.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/module.__main__.const" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/module.__main__.const" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/task_1.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__constants.const" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.const" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="lab15/Lab_15/c_shared_lib.so" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/c_shared_lib.so" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/c_shared_lib.so" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__constants.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__helpers.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__helpers.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__loader.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__loader.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/__constants.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/__constants.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="lab15/1" />
+    <option name="AFTER_PATH" value="lab15/1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="lab15/Lab_15/task_1.build/static_src/InspectPatcher.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2023,_19_25_[Changes]/InspectPatcher.o" />
+  </binary>
+</changelist>
